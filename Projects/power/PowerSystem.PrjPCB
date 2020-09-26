@@ -55,7 +55,7 @@ GenerateClassCluster=0
 DocumentUniqueId=YMAYVMBQ
 
 [Document2]
-DocumentPath=..\..\..\..\..\Public\Documents\Altium\PCB1.PcbDoc
+DocumentPath=PCB_power.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
