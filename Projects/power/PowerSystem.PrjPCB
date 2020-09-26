@@ -38,7 +38,7 @@ PrefsVaultGUID=
 PrefsRevisionGUID=
 
 [Document1]
-DocumentPath=..\rover-pcb-master\rover-pcb-master\Projects\MCU\TM4C123GH6PMI.SchDoc
+DocumentPath=..\..\..\rover-pcb-master\rover-pcb-master\Projects\MCU\TM4C123GH6PMI.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -55,7 +55,7 @@ GenerateClassCluster=0
 DocumentUniqueId=YMAYVMBQ
 
 [Document2]
-DocumentPath=..\..\..\Public\Documents\Altium\PCB1.PcbDoc
+DocumentPath=..\..\..\..\..\Public\Documents\Altium\PCB1.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
