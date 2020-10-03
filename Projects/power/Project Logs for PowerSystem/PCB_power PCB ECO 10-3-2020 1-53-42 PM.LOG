@@ -1,0 +1,30 @@
+Change Component DesignItemId : Designator=R22 Old DesignItemId=Res1 New DesignItemId=0.0015_1%_2512_CURR
+Change Component Footprint: Designator=R22 Old Footprint=AXIAL-0.3 New Footprint=RES_2512
+Change Component Comment : Designator=R22 Old Comment=1 New Comment=0.0015
+Change Component Description : Designator=R22 Old Description=Resistor New Description=RES 0.0015 OHM 1% 1W 2512
+Change Component Library : Designator=R22 Old Library=Miscellaneous Devices.IntLib New Library=Resistors.SchLib
+Change component parameters: Designator = "R22"; Footprint = "RES_2512"; UniqueID = "\BREELUPQ"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Category"; Value = "Resistors"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "https://industrial.panasonic.com/cdbs/www-data/pdf/RDN0000/AOA0000C90.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = "https://industrial.panasonic.com/cdbs/www-data/pdf/RDN0000/AOA0000C90.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Composition"; Value = "Metal Element"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Failure Rate"; Value = "-"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Features"; Value = "Current Sense"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Height - Seated (Max)"; Value = "0.043" (1.10mm)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Panasonic Electronic Components"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "ERJ-M1WTF1M5U"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Operating Temperature"; Value = "-55°C ~ 170°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package / Case"; Value = "2512 (6432 Metric)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Packaging"; Value = "Cut Tape (CT)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Part Status"; Value = "Active"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Power (Watts)"; Value = "1W"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Pricing 1"; Value = "1=0.57, 10=0.479, 25=0.4104, 50=0.3692, 100=0.3214, 250=0.28716, 500=0.23248, 1000=0.18803 (USD)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RoHS"; Value = "RoHS Compliant"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Size / Dimension"; Value = "0.252" L x 0.126" W (6.40mm x 3.20mm)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Stock 1"; Value = "36856"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Device Package"; Value = "2512"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "P1.5NDCT-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Temperature Coefficient"; Value = "250/ +450ppm/°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "±1%"; VariantName = "[No Variations]"
