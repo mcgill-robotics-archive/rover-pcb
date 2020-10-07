@@ -1,0 +1,11 @@
+Removed Pin From Net: NetName=VS Pin=CPU_CONNECTOR-1
+Added Pin To Net: NetName=VS Pin=C4-2
+Added Pin To Net: NetName=VS Pin=C5-2
+Added Pin To Net: NetName=VS Pin=C6-2
+Added Pin To Net: NetName=VS Pin=C7-1
+Added Pin To Net: NetName=VS Pin=C8-1
+Added Pin To Net: NetName=VS Pin=C9-2
+Added Pin To Net: NetName=+12 Pin=CPU_CONNECTOR-1
+Added Pin To Net: NetName=VS Pin=L1-2
+Added Pin To Net: NetName=VS Pin=U1-1
+Change Net Name : Old Net Name=VS New Net Name=+5V
