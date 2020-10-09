@@ -1,2 +1,2 @@
 # rover-pcb
-Printed Circuit Boards on Rover
+Crazy studd that Abdul is trying to make the powerboard work with some miracle
