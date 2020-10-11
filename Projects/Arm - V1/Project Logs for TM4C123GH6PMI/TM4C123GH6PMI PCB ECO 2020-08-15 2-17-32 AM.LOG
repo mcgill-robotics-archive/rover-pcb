@@ -1,0 +1,10 @@
+Change Physical Footprint: Designator=C7 Old Footprint=CAP_1206 New Footprint=CAP_1206
+Change Physical Footprint: Designator=C10 Old Footprint=CAP_1206 New Footprint=CAP_1206
+Change Physical Footprint: Designator=C11 Old Footprint=CAP_1206 New Footprint=CAP_1206
+Change Physical Footprint: Designator=C20 Old Footprint=CAP_0402_M New Footprint=CAP_0402_M
+Change Physical Footprint: Designator=C23 Old Footprint=CAP_0603 New Footprint=CAP_0603
+Change Physical Footprint: Designator=C26 Old Footprint=CAP_0402_M New Footprint=CAP_0402_M
+Change Physical Footprint: Designator=L1 Old Footprint=IND_0603 New Footprint=IND_0603
+Change Physical Footprint: Designator=P1 Old Footprint=MHDR1X5 New Footprint=MHDR1X5
+Change Physical Footprint: Designator=R1 Old Footprint=RES_1206 New Footprint=RES_1206
+Change Physical Footprint: Designator=U1 Old Footprint=SOT230P700X180-4N New Footprint=SOT230P700X180-4N
