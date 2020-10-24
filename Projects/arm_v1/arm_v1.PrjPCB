@@ -276,7 +276,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document15]
-DocumentPath=..\..\..\AltiumDesigner\2020-08-08_18-29-37\2020-08-08_18-29-37.PcbLib
+DocumentPath=..\..\..\AltiumDesigner\DRV8876\DRV8876.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -290,10 +290,10 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=USILCOEH
+DocumentUniqueId=
 
 [Document16]
-DocumentPath=..\..\..\AltiumDesigner\2020-08-08_18-29-37\2020-08-08_18-29-37.SchLib
+DocumentPath=..\..\..\AltiumDesigner\DRV8876\DRV8876.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -310,7 +310,7 @@ GenerateClassCluster=0
 DocumentUniqueId=TRTREKGE
 
 [Document17]
-DocumentPath=..\..\..\AltiumDesigner\2020-08-25_19-06-52\2020-08-25_19-06-52.PcbLib
+DocumentPath=..\..\..\AltiumDesigner\SN75LBC179DR\SN75LBC179DR.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -327,7 +327,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document18]
-DocumentPath=..\..\..\AltiumDesigner\2020-08-25_19-06-52\2020-08-25_19-06-52.SchLib
+DocumentPath=..\..\..\AltiumDesigner\SN75LBC179DR\SN75LBC179DR.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
