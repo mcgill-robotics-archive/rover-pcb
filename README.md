@@ -1,2 +1,2 @@
-# rover-pcb
-Printed Circuit Boards on Rover
+# science-dev
+Science board
