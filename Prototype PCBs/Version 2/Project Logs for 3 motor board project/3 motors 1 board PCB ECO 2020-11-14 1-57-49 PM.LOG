@@ -1,0 +1,2 @@
+Change Component Designator: OldDesignator=TransConn2 NewDesignator=TransConn3
+Added Member To Class: ClassName=Drive Board Schematic 3 motors Member=Component TransConn3 Header 6

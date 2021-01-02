@@ -1,7 +1,7 @@
 Protel Design System Design Rule Check
-PCB File : D:\asidhu\Github\rover-pcb\Final Design PCBs\3 motors 1 board.PcbDoc
-Date     : 2020-11-01
-Time     : 8:23:20 PM
+PCB File : D:\asidhu\Github\rover-pcb\Prototype PCBs\Version 2\3 motors 1 board.PcbDoc
+Date     : 2020-11-14
+Time     : 2:02:47 PM
 
 Processing Rule : Clearance Constraint (Gap=10mil) (All),(All)
 Rule Violations :0
@@ -48,4 +48,4 @@ Rule Violations :0
 
 Violations Detected : 0
 Waived Violations : 0
-Time Elapsed        : 00:00:02
+Time Elapsed        : 00:00:01
