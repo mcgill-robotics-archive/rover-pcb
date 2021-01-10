@@ -1,0 +1,13 @@
+Removed Pin From Net: NetName=GND Pin=J?-1
+Removed Pin From Net: NetName=GND Pin=J?-2
+Removed Pin From Net: NetName=GND Pin=J?-3
+Removed Pin From Net: NetName=IN+1 Pin=J?-4
+Removed Pin From Net: NetName=IN+1 Pin=J?-5
+Removed Pin From Net: NetName=IN+1 Pin=J?-6
+Change Component Designator: OldDesignator=J? NewDesignator=  
+Added Pin To Net: NetName=IN+1 Pin=  -1
+Added Pin To Net: NetName=IN+1 Pin=  -2
+Added Pin To Net: NetName=IN+1 Pin=  -3
+Added Pin To Net: NetName=GND Pin=  -4
+Added Pin To Net: NetName=GND Pin=  -5
+Added Pin To Net: NetName=GND Pin=  -6
