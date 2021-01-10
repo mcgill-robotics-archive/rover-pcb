@@ -1,0 +1,8 @@
+Change Component Comment : Designator=P8 Old Comment=Comment New Comment=76825-0006
+Added Pin To Net: NetName=GND Pin=P8-1
+Added Pin To Net: NetName=+24V Pin=P8-2
+Added Pin To Net: NetName=GND Pin=P8-3
+Added Pin To Net: NetName=+24V Pin=P8-4
+Added Pin To Net: NetName=GND Pin=P8-5
+Added Pin To Net: NetName=+24V Pin=P8-6
+Added Member To Class: ClassName=arm_v2 Member=Component P8 76825-0006

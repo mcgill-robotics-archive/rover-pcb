@@ -1,0 +1,26 @@
+Removed Pin From Net: NetName=GND Pin=P9-1
+Removed Pin From Net: NetName=NO1 Pin=P9-2
+Removed Pin From Net: NetName=GND Pin=P9-3
+Removed Pin From Net: NetName=NO2 Pin=P9-4
+Removed Pin From Net: NetName=GND Pin=P9-5
+Removed Pin From Net: NetName=NO3 Pin=P9-6
+Removed Pin From Net: NetName=GND Pin=P9-7
+Removed Pin From Net: NetName=NO4 Pin=P9-8
+Added Component: Designator=P9(105310-1108_MOL)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Built_By"; Value = "EMA_Colton"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Copyright"; Value = "Copyright (C) 2018 Accelerated Designs. All rights reserved"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet"; Value = "https://www.molex.com/pdm_docs/sd/1053101210_sd.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "105310-1108"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RefDes"; Value = "RefDes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SourceLibrary"; Value = "Molex_Connector_corporation_2020-02-27"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "DEV"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Molex Connector Corporation"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=P9-1
+Added Pin To Net: NetName=GND Pin=P9-2
+Added Pin To Net: NetName=GND Pin=P9-3
+Added Pin To Net: NetName=GND Pin=P9-4
+Added Pin To Net: NetName=NO4 Pin=P9-5
+Added Pin To Net: NetName=NO3 Pin=P9-6
+Added Pin To Net: NetName=NO2 Pin=P9-7
+Added Pin To Net: NetName=NO1 Pin=P9-8
