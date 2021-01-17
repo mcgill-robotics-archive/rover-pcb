@@ -344,40 +344,6 @@ GenerateClassCluster=0
 DocumentUniqueId=LGOSRYGC
 
 [Document19]
-DocumentPath=..\..\..\..\..\Downloads\SYM-76825-0006.zip
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=
-
-[Document20]
-DocumentPath=..\..\..\..\..\Downloads\SYM-76825-0006\76825_0006.psm
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=
-
-[Document21]
 DocumentPath=..\..\Libraries\PCBLib\Molex Footprints.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -394,7 +360,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document22]
+[Document20]
 DocumentPath=..\..\Libraries\PCBLib\Molex 76825-0006.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -411,7 +377,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=EMSOWGBO
 
-[Document23]
+[Document21]
 DocumentPath=..\..\Libraries\SCHLib\Molex 76825-0006.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -428,7 +394,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=FFXCFLPO
 
-[Document24]
+[Document22]
 DocumentPath=..\..\Libraries\SCHLib\Molex 105310-1108 Limit Switch Connector.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -445,7 +411,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=UOXFRDXY
 
-[Document25]
+[Document23]
 DocumentPath=..\..\Libraries\PCBLib\Molex 105310-1108 Limit Switch Connector.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -585,7 +551,7 @@ OutputDefault20=0
 [OutputGroup2]
 Name=Simulator Outputs
 Description=
-TargetPrinter=Microsoft Print to PDF
+TargetPrinter=EPSON71553B (Epson Stylus NX530)
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 
 [OutputGroup3]
