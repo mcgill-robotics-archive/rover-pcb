@@ -1,0 +1,41 @@
+Removed Pin From Net: NetName=+5V Pin=P5-1
+Removed Pin From Net: NetName=DATA1_A Pin=P5-2
+Removed Pin From Net: NetName=DATA2_A Pin=P5-3
+Removed Pin From Net: NetName=CLK1_A Pin=P5-4
+Removed Pin From Net: NetName=CLK2_A Pin=P5-5
+Removed Pin From Net: NetName=GND Pin=P5-6
+Removed Pin From Net: NetName=+5V Pin=P6-1
+Removed Pin From Net: NetName=DATA1_B Pin=P6-2
+Removed Pin From Net: NetName=DATA2_B Pin=P6-3
+Removed Pin From Net: NetName=CLK1_B Pin=P6-4
+Removed Pin From Net: NetName=CLK2_B Pin=P6-5
+Removed Pin From Net: NetName=GND Pin=P6-6
+Added Component: Designator=P5(1053091106)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://rs.componentsearchengine.com/Datasheets/2/105309-1106.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "10.71mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Molex"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "105309-1106"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser2 Part Number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser2 Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=P6(1053091106)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://rs.componentsearchengine.com/Datasheets/2/105309-1106.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "10.71mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Molex"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "105309-1106"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser2 Part Number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser2 Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=+5V Pin=P5-1
+Added Pin To Net: NetName=DATA1_A Pin=P5-2
+Added Pin To Net: NetName=DATA2_A Pin=P5-3
+Added Pin To Net: NetName=CLK1_A Pin=P5-4
+Added Pin To Net: NetName=CLK2_A Pin=P5-5
+Added Pin To Net: NetName=GND Pin=P5-6
+Added Pin To Net: NetName=+5V Pin=P6-1
+Added Pin To Net: NetName=DATA1_B Pin=P6-2
+Added Pin To Net: NetName=DATA2_B Pin=P6-3
+Added Pin To Net: NetName=CLK1_B Pin=P6-4
+Added Pin To Net: NetName=CLK2_B Pin=P6-5
+Added Pin To Net: NetName=GND Pin=P6-6
+Added Member To Class: ClassName=arm_v2 Member=Component P9 Limit Switch

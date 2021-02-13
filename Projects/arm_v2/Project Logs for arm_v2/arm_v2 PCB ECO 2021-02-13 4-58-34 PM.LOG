@@ -1,0 +1,38 @@
+Removed Pin From Net: NetName=OUT1_A Pin=P2-1
+Removed Pin From Net: NetName=OUT2_A Pin=P2-2
+Removed Pin From Net: NetName=OUT1_B Pin=P3-1
+Removed Pin From Net: NetName=OUT2_B Pin=P3-2
+Removed Pin From Net: NetName=OUT1_C Pin=P4-1
+Removed Pin From Net: NetName=OUT2_C Pin=P4-2
+Added Component: Designator=P2(436500227)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://www.molex.com/pdm_docs/sd/436500227_sd.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "10.15mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Molex"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "43650-0227"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser2 Part Number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser2 Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=P3(436500227)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://www.molex.com/pdm_docs/sd/436500227_sd.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "10.15mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Molex"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "43650-0227"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser2 Part Number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser2 Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=P4(436500227)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://www.molex.com/pdm_docs/sd/436500227_sd.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "10.15mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Molex"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "43650-0227"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser2 Part Number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser2 Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=OUT2_A Pin=P2-1
+Added Pin To Net: NetName=OUT1_A Pin=P2-2
+Added Pin To Net: NetName=OUT2_B Pin=P3-1
+Added Pin To Net: NetName=OUT1_B Pin=P3-2
+Added Pin To Net: NetName=OUT2_C Pin=P4-1
+Added Pin To Net: NetName=OUT1_C Pin=P4-2
+Added Member To Class: ClassName=arm_v2 Member=Component P5 EN_A
+Added Member To Class: ClassName=arm_v2 Member=Component P6 EN_B
