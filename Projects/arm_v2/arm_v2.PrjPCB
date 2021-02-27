@@ -429,7 +429,7 @@ GenerateClassCluster=0
 DocumentUniqueId=XUUIDIJP
 
 [Document24]
-DocumentPath=..\..\..\..\AltiumLL\SamacSys.PcbLib
+DocumentPath=..\..\Libraries\PCBLib\SamacSys.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -443,10 +443,10 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=MPRJBCLL
+DocumentUniqueId=
 
 [Document25]
-DocumentPath=..\..\..\..\AltiumLL\SamacSys.SchLib
+DocumentPath=..\..\Libraries\SCHLib\SamacSys.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -460,7 +460,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=NGLTGAHM
+DocumentUniqueId=
 
 [GeneratedDocument1]
 DocumentPath=Project Outputs for arm_v2\Design Rule Check - arm_v2.html
