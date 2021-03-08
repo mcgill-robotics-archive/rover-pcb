@@ -1,0 +1,306 @@
+Added Component: Designator=ANTENNA CONNECTOR(AMASS_XT60-M)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "AMASS"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "XT60-M"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "Package Analog Devices"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/XT60-M/AMASS/view-part/2883912/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=ARM_CONNECTOR(AMASS_XT60-M)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "AMASS"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "XT60-M"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "Package Analog Devices"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/XT60-M/AMASS/view-part/2883912/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=AUTONOMY_CONNECTOR(AMASS_XT60-M)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "AMASS"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "XT60-M"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "Package Analog Devices"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/XT60-M/AMASS/view-part/2883912/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=CPU_CONNECTOR(HDR1X2)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=CPU Connector(AMASS_XT60-M)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "AMASS"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "XT60-M"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "Package Analog Devices"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/XT60-M/AMASS/view-part/2883912/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=D3(DO-35)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Code_JEDEC"; Value = "DO-204-AH"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Manufacturer Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.fairchildsemi.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://www.fairchildsemi.com/ds/1N%2F1N4148.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DatasheetVersion"; Value = "1997"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "Diode, Axial; Body 3.8 x 1.9 mm (LxDia. max), Lead Dia. 0.53 mm (max)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "DO-35"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=D4(DO-35)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Code_JEDEC"; Value = "DO-204-AH"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Manufacturer Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.fairchildsemi.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://www.fairchildsemi.com/ds/1N%2F1N4148.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DatasheetVersion"; Value = "1997"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "Diode, Axial; Body 3.8 x 1.9 mm (LxDia. max), Lead Dia. 0.53 mm (max)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "DO-35"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=Drive Connector(AMASS_XT60-M)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "AMASS"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "XT60-M"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "Package Analog Devices"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/XT60-M/AMASS/view-part/2883912/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=F0(PIN-W2/E2.8)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "Thru-Hole; 2 Leads"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "PIN-W2/E2.8"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=F3(PIN-W2/E2.8)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "Thru-Hole; 2 Leads"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "PIN-W2/E2.8"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=F4(PIN-W2/E2.8)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "Thru-Hole; 2 Leads"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "PIN-W2/E2.8"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=F7(PIN-W2/E2.8)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "Thru-Hole; 2 Leads"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "PIN-W2/E2.8"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=F8(PIN-W2/E2.8)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "Thru-Hole; 2 Leads"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "PIN-W2/E2.8"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=F9(PIN-W2/E2.8)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "Thru-Hole; 2 Leads"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "PIN-W2/E2.8"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=F16(PIN-W2/E2.8)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "Thru-Hole; 2 Leads"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "PIN-W2/E2.8"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=From Regulator(AMASS_XT60-M)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "AMASS"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "XT60-M"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "Package Analog Devices"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/XT60-M/AMASS/view-part/2883912/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=KILL_SWITCH(SPST-2)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "Switch; 2 Leads"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "SPST-2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "24-Mar-1999"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=P1(MHDR1X5)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=Q1(TO-226-AA)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Code_JEDEC"; Value = "TO-226-AA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "TO, Flat Index; 3 In-Line, Axial Leads; Body Dia. 4.8mm; Leads 0.55 x 0.51 mm (max)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "TO-226-AA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=R100(AXIAL-0.3)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "Axial Device, Thru-Hole; 2 Leads; 0.3 in Pin Spacing"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "AXIAL-0.3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10K"; VariantName = "[No Variations]"
+Added Component: Designator=Relay A(MODULE4)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "MODULE4"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "24-Mar-1999"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=Relay B(MODULE4)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "MODULE4"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "24-Mar-1999"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=Science Connector(AMASS_XT60-M)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "AMASS"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "XT60-M"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "Package Analog Devices"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/XT60-M/AMASS/view-part/2883912/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=(0768250006)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Datasheet Link"; Value = "http://www.molex.com/webdocs/datasheets/pdf/en-us/0768250006_PCB_HEADERS.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "16mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Molex"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "76825-0006"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser2 Part Number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser2 Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=To Regulator(AMASS_XT60-M)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "AMASS"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "XT60-M"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "Package Analog Devices"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/XT60-M/AMASS/view-part/2883912/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=IN+1 Pin=-1
+Added Pin To Net: NetName=IN+1 Pin=-2
+Added Pin To Net: NetName=IN+1 Pin=-3
+Added Pin To Net: NetName=GND Pin=-4
+Added Pin To Net: NetName=GND Pin=-5
+Added Pin To Net: NetName=GND Pin=-6
+Added Pin To Net: NetName=GND Pin=ANTENNA CONNECTOR-1
+Added Pin To Net: NetName=NetANTENNA CONNECTOR_2 Pin=ANTENNA CONNECTOR-2
+Added Pin To Net: NetName=GND Pin=ARM_CONNECTOR-1
+Added Pin To Net: NetName=NetARM_CONNECTOR_2 Pin=ARM_CONNECTOR-2
+Added Pin To Net: NetName=GND Pin=AUTONOMY_CONNECTOR-1
+Added Pin To Net: NetName=NetAUTONOMY_CONNECTOR_2 Pin=AUTONOMY_CONNECTOR-2
+Added Pin To Net: NetName=+12 Pin=CPU_CONNECTOR-1
+Added Pin To Net: NetName=GND Pin=CPU_CONNECTOR-2
+Added Pin To Net: NetName=GND Pin=CPU Connector-1
+Added Pin To Net: NetName=NetD3_1 Pin=D3-1
+Added Pin To Net: NetName=IN-1 Pin=D3-2
+Added Pin To Net: NetName=RELAY_A Pin=D4-2
+Added Pin To Net: NetName=GND Pin=Drive Connector-1
+Added Pin To Net: NetName=NetDrive Connector_2 Pin=Drive Connector-2
+Added Pin To Net: NetName=RELAY_B Pin=F0-1
+Added Pin To Net: NetName=NetDrive Connector_2 Pin=F0-2
+Added Pin To Net: NetName=RELAY_B Pin=F3-1
+Added Pin To Net: NetName=NetARM_CONNECTOR_2 Pin=F3-2
+Added Pin To Net: NetName=RELAY_B Pin=F4-1
+Added Pin To Net: NetName=NetANTENNA CONNECTOR_2 Pin=F4-2
+Added Pin To Net: NetName=RELAY_B Pin=F7-1
+Added Pin To Net: NetName=NetAUTONOMY_CONNECTOR_2 Pin=F7-2
+Added Pin To Net: NetName=NetF16_1 Pin=F16-1
+Added Pin To Net: NetName=RELAY_B Pin=F16-2
+Added Pin To Net: NetName=GND Pin=From Regulator-1
+Added Pin To Net: NetName=NetD3_1 Pin=KILL_SWITCH-1
+Added Pin To Net: NetName=GND Pin=KILL_SWITCH-2
+Added Pin To Net: NetName=GND Pin=P1-1
+Added Pin To Net: NetName=TCK Pin=P1-2
+Added Pin To Net: NetName=TDO Pin=P1-3
+Added Pin To Net: NetName=TDI Pin=P1-4
+Added Pin To Net: NetName=TMS Pin=P1-5
+Added Pin To Net: NetName=GND Pin=Q1-3
+Added Pin To Net: NetName=GND Pin=R100-2
+Added Pin To Net: NetName=IN-1 Pin=Relay A-1
+Added Pin To Net: NetName=RELAY_A Pin=Relay A-2
+Added Pin To Net: NetName=IN-1 Pin=Relay A-3
+Added Pin To Net: NetName=NetD3_1 Pin=Relay A-4
+Added Pin To Net: NetName=RELAY_A Pin=Relay B-1
+Added Pin To Net: NetName=NetF16_1 Pin=Relay B-2
+Added Pin To Net: NetName=RELAY_A Pin=Relay B-3
+Added Pin To Net: NetName=GND Pin=Science Connector-1
+Added Pin To Net: NetName=GND Pin=To Regulator-1
+Added Pin To Net: NetName=IN-2 Pin=To Regulator-2
+Added Pin To Net: NetName=12V Pin=F8-1
+Added Pin To Net: NetName=12V Pin=F9-1
+Added Pin To Net: NetName=12V Pin=From Regulator-2
+Added Net: Name=12V
+Added Pin To Net: NetName=CPU Connector Pin=CPU Connector-2
+Added Pin To Net: NetName=CPU Connector Pin=F8-2
+Added Net: Name=CPU Connector
+Added Pin To Net: NetName=CPU Controlled Switch Pin=Q1-2
+Added Pin To Net: NetName=CPU Controlled Switch Pin=R100-1
+Added Net: Name=CPU Controlled Switch
+Added Pin To Net: NetName=NetD4_1 Pin=D4-1
+Added Pin To Net: NetName=NetD4_1 Pin=Q1-1
+Added Pin To Net: NetName=NetD4_1 Pin=Relay B-4
+Added Net: Name=NetD4_1
+Added Pin To Net: NetName=Science Connector Pin=F9-2
+Added Pin To Net: NetName=Science Connector Pin=Science Connector-2
+Added Net: Name=Science Connector
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component ANTENNA CONNECTOR XT60-M
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component ARM_CONNECTOR XT60-M
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component AUTONOMY_CONNECTOR XT60-M
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component CPU_CONNECTOR 0428202224-ND
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component CPU Connector XT60-M
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component D3 Diode 1N4148
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component D4 Diode 1N4148
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component Drive Connector XT60-M
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component F0 50A
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component F3 50A
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component F4 15A
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component F7 25A
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component F8 6 A 
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component F9 20 A
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component F16 7A
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component From Regulator XT60-M
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component KILL_SWITCH SW-PB
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component P1 MHDR1X5
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component Q1 NPN
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component R100 
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component Relay A J115F11AH24VDCS61.5U
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component Relay B J115F11AH24VDCS61.5U
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component Science Connector XT60-M
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component To Regulator XT60-M
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component  76825-0006

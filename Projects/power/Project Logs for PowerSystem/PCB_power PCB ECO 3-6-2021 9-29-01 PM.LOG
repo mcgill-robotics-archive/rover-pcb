@@ -1,0 +1,198 @@
+Removed Pin From Net: NetName=GND Pin=35V, 20A-1
+Removed Pin From Net: NetName=GND Pin=C32-1
+Removed Pin From Net: NetName=GND Pin=CPU_SWITCH-2
+Removed Pin From Net: NetName=IN-2 Pin=D4-2
+Removed Pin From Net: NetName=GND Pin=DVR0-4
+Removed Pin From Net: NetName=RELAY_A Pin=F2-1
+Removed Pin From Net: NetName=+12 Pin=L3-2
+Removed Pin From Net: NetName=GND Pin=R18-1
+Removed Pin From Net: NetName=+12 Pin=R20-2
+Removed Pin From Net: NetName=RELAY_A Pin=Relay A-2
+Removed Pin From Net: NetName=IN-2 Pin=Relay B-1
+Removed Pin From Net: NetName=IN-2 Pin=Relay B-3
+Removed Pin From Net: NetName=GND Pin=SCIENCE_CONNECTOR-1
+Added Component: Designator=CPU Connector(AMASS_XT60-M)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "AMASS"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "XT60-M"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "Package Analog Devices"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/XT60-M/AMASS/view-part/2883912/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=F8(PIN-W2/E2.8)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "Thru-Hole; 2 Leads"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "PIN-W2/E2.8"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=F9(PIN-W2/E2.8)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "Thru-Hole; 2 Leads"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "PIN-W2/E2.8"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=From Regulator(AMASS_XT60-M)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "AMASS"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "XT60-M"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "Package Analog Devices"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/XT60-M/AMASS/view-part/2883912/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=Q1(TO-226-AA)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Code_JEDEC"; Value = "TO-226-AA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "TO, Flat Index; 3 In-Line, Axial Leads; Body Dia. 4.8mm; Leads 0.55 x 0.51 mm (max)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "TO-226-AA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=R100(AXIAL-0.3)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "Axial Device, Thru-Hole; 2 Leads; 0.3 in Pin Spacing"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "AXIAL-0.3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10K"; VariantName = "[No Variations]"
+Added Component: Designator=Science Connector(AMASS_XT60-M)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "AMASS"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "XT60-M"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "Package Analog Devices"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/XT60-M/AMASS/view-part/2883912/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=To Regulator(AMASS_XT60-M)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "AMASS"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "XT60-M"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "Package Analog Devices"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/XT60-M/AMASS/view-part/2883912/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=CPU Connector-1
+Added Pin To Net: NetName=CPU Connector Pin=CPU Connector-2
+Added Pin To Net: NetName=NetD4_1 Pin=D4-1
+Added Pin To Net: NetName=12V Pin=F8-1
+Added Pin To Net: NetName=CPU Connector Pin=F8-2
+Added Pin To Net: NetName=12V Pin=F9-1
+Added Pin To Net: NetName=Science Connector Pin=F9-2
+Added Pin To Net: NetName=RELAY_A Pin=F16-2
+Added Pin To Net: NetName=GND Pin=From Regulator-1
+Added Pin To Net: NetName=12V Pin=From Regulator-2
+Added Pin To Net: NetName=NetD4_1 Pin=Q1-1
+Added Pin To Net: NetName=CPU Controlled Switch Pin=Q1-2
+Added Pin To Net: NetName=GND Pin=Q1-3
+Added Pin To Net: NetName=CPU Controlled Switch Pin=R100-1
+Added Pin To Net: NetName=GND Pin=R100-2
+Added Pin To Net: NetName=NetD4_1 Pin=Relay B-4
+Added Pin To Net: NetName=GND Pin=Science Connector-1
+Added Pin To Net: NetName=Science Connector Pin=Science Connector-2
+Added Pin To Net: NetName=GND Pin=To Regulator-1
+Added Pin To Net: NetName=IN-2 Pin=To Regulator-2
+Added Pin To Net: NetName=CPU Controlled Switch Pin=U2-61
+Change Net Name : Old Net Name=RELAY_A New Net Name=RELAY_B
+Added Pin To Net: NetName=RELAY_A Pin=D4-2
+Added Pin To Net: NetName=RELAY_A Pin=Relay A-2
+Added Pin To Net: NetName=RELAY_A Pin=Relay B-1
+Added Pin To Net: NetName=RELAY_A Pin=Relay B-3
+Added Net: Name=RELAY_A
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component ANTENNA CONNECTOR XT60-M
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component ARM_CONNECTOR XT60-M
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component AUTONOMY_CONNECTOR XT60-M
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component C1 100uF
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component C2 10nF
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component C3 10nF
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component C4 100nF
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component C5 2.2uF
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component C6 2.2uF
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component C7 100uF
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component C8 100uF
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component C9 1uF
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component C10 100uF
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component C11 100uF
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component C12 10uF
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component C13 10nF
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component C14 100nF
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component C15 100nF
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component C16 10nF
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component C17 100nF
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component C18 13pF
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component C19 13pF
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component C20 100nF
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component C21 10nF
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component C22 100nF
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component C23 10uF
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component C24 2.2uF
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component C25 1uF
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component C26 100nF
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component C27 100nF
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component C28 100nF
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component C29 100nF
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component C30 100nF
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component CPU_CONNECTOR 0428202224-ND
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component CPU Connector XT60-M
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component D1 Led Red
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component D2 Led Red
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component D3 Diode 1N4148
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component D4 Diode 1N4148
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component Drive Connector XT60-M
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component F0 50A
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component F1 550mA
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component F3 50A
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component F4 15A
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component F7 25A
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component F8 6 A 
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component F9 20 A
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component F16 7A
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component From Regulator XT60-M
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component KILL_SWITCH SW-PB
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component L1 200R
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component P1 MHDR1X5
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component Q1 NPN
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component R0 WSK06125L000FEA
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component R1 1M
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component R2 10k
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component R3 10k
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component R4 10k
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component R5 10k
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component R6 10k
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component R7 10k
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component R8 27
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component R9 27
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component R11 10k
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component R12 10k
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component R13 120
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component R14 120
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component R15 10k
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component R16 10k
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component R17 10k
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component R19 10k
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component R21 WSK06125L000FEA
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component R22 WSK06125L000FEA
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component R23 WSK06125L000FEA
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component R24 WSK06125L000FEA
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component R25 WSK06125L000FEA
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component R26 WSK06125L000FEA
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component R100 
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component Relay A J115F11AH24VDCS61.5U
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component Relay B J115F11AH24VDCS61.5U
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component Science Connector XT60-M
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component To Regulator XT60-M
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component U1 MCP1825S-3302E/DB
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component U2 TM4C123GH6PMI
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component U3 FT230XQ
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component U4 INA3221AQRGVRQ1
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component USB1 USB type-B jack
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component X1 CRYSTAL 16MHZ

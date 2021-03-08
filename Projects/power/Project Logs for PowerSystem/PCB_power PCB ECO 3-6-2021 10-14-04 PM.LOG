@@ -1,0 +1,15 @@
+Added Component: Designator=R200(RES_WSK0612_VIS)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Built_By"; Value = "EMA_Justin"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Copyright"; Value = "Copyright (C) 2018 Accelerated Designs. All rights reserved"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet"; Value = "https://www.vishay.com/docs/30161/wsk0612.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "WSK06125L000FEA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RefDes"; Value = "RefDes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SourceLibrary"; Value = "Vishay_2020-09-02"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "DEV"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Vishay"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=IN+1 Pin=R200-1
+Added Pin To Net: NetName=IN+1 Pin=R200-2
+Added Pin To Net: NetName=IN-2 Pin=R200-3
+Added Pin To Net: NetName=IN-2 Pin=R200-4
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component R200 WSK06125L000FEA

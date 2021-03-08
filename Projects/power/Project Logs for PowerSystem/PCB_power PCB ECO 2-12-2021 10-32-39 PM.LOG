@@ -1,0 +1,36 @@
+Removed Pin From Net: NetName=RELAY_A Pin=F8-1
+Removed Pin From Net: NetName=RELAY_A Pin=F9-1
+Removed Pin From Net: NetName=RELAY_A Pin=F10-1
+Removed Pin From Net: NetName=RELAY_A Pin=F11-1
+Removed Pin From Net: NetName=RELAY_A Pin=F12-1
+Removed Pin From Net: NetName=RELAY_A Pin=F13-1
+Removed Pin From Net: NetName=RELAY_A Pin=F14-1
+Removed Pin From Net: NetName=RELAY_A Pin=F15-1
+Removed Pin From Net: NetName=GND Pin=PORT0_CONNECTOR-2
+Removed Pin From Net: NetName=GND Pin=PORT1_CONNECTOR-2
+Removed Pin From Net: NetName=GND Pin=PORT2_CONNECTOR-2
+Removed Pin From Net: NetName=GND Pin=PORT3_CONNECTOR-2
+Removed Pin From Net: NetName=GND Pin=PORT4_CONNECTOR-2
+Removed Pin From Net: NetName=GND Pin=PORT5_CONNECTOR-2
+Removed Pin From Net: NetName=GND Pin=PORT6_CONNECTOR-2
+Removed Pin From Net: NetName=GND Pin=PORT7_CONNECTOR-2
+Removed Member From Class: ClassName=TM4C123GH6PMI Member=F8
+Removed Member From Class: ClassName=TM4C123GH6PMI Member=F9
+Removed Member From Class: ClassName=TM4C123GH6PMI Member=F10
+Removed Member From Class: ClassName=TM4C123GH6PMI Member=F11
+Removed Member From Class: ClassName=TM4C123GH6PMI Member=F12
+Removed Member From Class: ClassName=TM4C123GH6PMI Member=F13
+Removed Member From Class: ClassName=TM4C123GH6PMI Member=F14
+Removed Member From Class: ClassName=TM4C123GH6PMI Member=F15
+Removed Member From Class: ClassName=TM4C123GH6PMI Member=PORT0_CONNECTOR
+Removed Member From Class: ClassName=TM4C123GH6PMI Member=PORT1_CONNECTOR
+Removed Member From Class: ClassName=TM4C123GH6PMI Member=PORT2_CONNECTOR
+Removed Member From Class: ClassName=TM4C123GH6PMI Member=PORT3_CONNECTOR
+Removed Member From Class: ClassName=TM4C123GH6PMI Member=PORT4_CONNECTOR
+Removed Member From Class: ClassName=TM4C123GH6PMI Member=PORT5_CONNECTOR
+Removed Member From Class: ClassName=TM4C123GH6PMI Member=PORT6_CONNECTOR
+Removed Member From Class: ClassName=TM4C123GH6PMI Member=PORT7_CONNECTOR
+Added Pin To Net: NetName=IN+1 Pin=  -3
+Added Pin To Net: NetName=GND Pin=  -4
+Added Pin To Net: NetName=GND Pin=  -5
+Added Pin To Net: NetName=GND Pin=  -6

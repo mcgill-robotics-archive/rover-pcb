@@ -1,0 +1,2 @@
+Removed Pin From Net: NetName=GND Pin=CPU_CONNECTOR-2
+Removed Member From Class: ClassName=TM4C123GH6PMI Member=CPU_CONNECTOR

@@ -1,0 +1,77 @@
+Removed Pin From Net: NetName=GND Pin=ANTENNA_CONNECTOR-2
+Removed Pin From Net: NetName=GND Pin=ARM_CONNECTOR-2
+Removed Pin From Net: NetName=GND Pin=AUTONOMY_CONNECTOR-2
+Removed Pin From Net: NetName=NetF2_2 Pin=SCIENCE_CONNECTOR-1
+Removed Pin From Net: NetName=GND Pin=SCIENCE_CONNECTOR-2
+Removed Member From Class: ClassName=TM4C123GH6PMI Member=ANTENNA_CONNECTOR
+Change Component Footprint: Designator=ARM_CONNECTOR Old Footprint=HDR1X2 New Footprint=AMASS_XT60-M
+Change Component Footprint: Designator=AUTONOMY_CONNECTOR Old Footprint=HDR1X2 New Footprint=AMASS_XT60-M
+Change Component Footprint: Designator=SCIENCE_CONNECTOR Old Footprint=HDR1X2 New Footprint=AMASS_XT60-M
+Change Component Comment : Designator=ARM_CONNECTOR Old Comment=0428202224-ND New Comment=XT60-M
+Change Component Comment : Designator=AUTONOMY_CONNECTOR Old Comment=0428202224-ND New Comment=XT60-M
+Change Component Comment : Designator=SCIENCE_CONNECTOR Old Comment=0428202224-ND New Comment=XT60-M
+Change component parameters: Designator = "ARM_CONNECTOR"; Footprint = "AMASS_XT60-M"; UniqueID = "\ATHBDRKQ"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MF"; Value = "AMASS"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MP"; Value = "XT60-M"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "Package Analog Devices"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/XT60-M/AMASS/view-part/2883912/?ref=snap"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "AUTONOMY_CONNECTOR"; Footprint = "AMASS_XT60-M"; UniqueID = "\OERLGKTX"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MF"; Value = "AMASS"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MP"; Value = "XT60-M"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "Package Analog Devices"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/XT60-M/AMASS/view-part/2883912/?ref=snap"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "SCIENCE_CONNECTOR"; Footprint = "AMASS_XT60-M"; UniqueID = "\RRAOQSTW"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MF"; Value = "AMASS"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MP"; Value = "XT60-M"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "Package Analog Devices"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/XT60-M/AMASS/view-part/2883912/?ref=snap"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=ANTENNA CONNECTOR(AMASS_XT60-M)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "AMASS"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "XT60-M"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "Package Analog Devices"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/XT60-M/AMASS/view-part/2883912/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=Drive Connector(AMASS_XT60-M)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "AMASS"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "XT60-M"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "Package Analog Devices"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/XT60-M/AMASS/view-part/2883912/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=ANTENNA CONNECTOR-1
+Added Pin To Net: NetName=GND Pin=ARM_CONNECTOR-1
+Added Pin To Net: NetName=GND Pin=AUTONOMY_CONNECTOR-1
+Added Pin To Net: NetName=GND Pin=Drive Connector-1
+Added Pin To Net: NetName=GND Pin=SCIENCE_CONNECTOR-1
+Added Pin To Net: NetName=NetF2_2 Pin=SCIENCE_CONNECTOR-2
+Added Pin To Net: NetName=NetANTENNA CONNECTOR_2 Pin=ANTENNA CONNECTOR-2
+Added Pin To Net: NetName=NetANTENNA CONNECTOR_2 Pin=F4-2
+Added Net: Name=NetANTENNA CONNECTOR_2
+Added Pin To Net: NetName=NetARM_CONNECTOR_2 Pin=ARM_CONNECTOR-2
+Added Pin To Net: NetName=NetARM_CONNECTOR_2 Pin=F3-2
+Added Net: Name=NetARM_CONNECTOR_2
+Added Pin To Net: NetName=NetAUTONOMY_CONNECTOR_2 Pin=AUTONOMY_CONNECTOR-2
+Added Pin To Net: NetName=NetAUTONOMY_CONNECTOR_2 Pin=F7-2
+Added Net: Name=NetAUTONOMY_CONNECTOR_2
+Added Pin To Net: NetName=NetDrive Connector_2 Pin=Drive Connector-2
+Added Pin To Net: NetName=NetDrive Connector_2 Pin=F0-2
+Added Net: Name=NetDrive Connector_2
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component ANTENNA CONNECTOR XT60-M
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component Drive Connector XT60-M

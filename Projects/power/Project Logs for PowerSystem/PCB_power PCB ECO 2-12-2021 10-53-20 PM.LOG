@@ -1,0 +1,16 @@
+Removed Pin From Net: NetName=GND Pin=DRIVE_CONNECTOR-2
+Removed Member From Class: ClassName=TM4C123GH6PMI Member=DRIVE_CONNECTOR
+Added Component: Designator=Drive Connector(AMASS_XT60PB-M)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Pololu"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "XT60 YELLOW"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/XT60%20YELLOW/Pololu/view-part/423230/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=Drive Connector-2
+Added Pin To Net: NetName=NetDrive Connector_1 Pin=Drive Connector-1
+Added Pin To Net: NetName=NetDrive Connector_1 Pin=F0-2
+Added Net: Name=NetDrive Connector_1
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component Drive Connector XT60_YELLOW
