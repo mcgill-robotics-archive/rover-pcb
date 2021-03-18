@@ -32,7 +32,7 @@ Text Label 14450 5450 0    50   ~ 0
 phiM(CCD_Clock)
 Text Label 14450 5550 0    50   ~ 0
 SH
-Text Label 14450 5750 0    50   ~ 0
+Text Label 14450 5250 0    50   ~ 0
 ICG
 $Comp
 L Device:CP C7
@@ -281,64 +281,64 @@ Wire Wire Line
 $Comp
 L eec:76825-0006 J6
 U 1 1 5FE0E70D
-P 6450 8750
-F 0 "J6" H 6208 9115 50  0000 C CNN
-F 1 "76825-0006" H 6208 9024 50  0000 C CNN
-F 2 "connector:Molex-76825-0006-0" H 6450 9250 50  0001 L CNN
-F 3 "https://www.molex.com/pdm_docs/sd/768250006_sd.pdf" H 6450 9350 50  0001 L CNN
-F 4 "Conn" H 6450 9450 50  0001 L CNN "category"
-F 5 "DUAL ROW RA HEADER TIN 6CKT" H 6450 9550 50  0001 L CNN "digikey description"
-F 6 "WM11971-ND" H 6450 9650 50  0001 L CNN "digikey part number"
-F 7 "yes" H 6450 9750 50  0001 L CNN "is connector"
-F 8 "yes" H 6450 9850 50  0001 L CNN "is male"
-F 9 "yes" H 6450 9950 50  0001 L CNN "lead free"
-F 10 "dc1b81f16b5cdc84" H 6450 10050 50  0001 L CNN "library id"
-F 11 "Molex" H 6450 10150 50  0001 L CNN "manufacturer"
-F 12 "538-76825-0006" H 6450 10250 50  0001 L CNN "mouser part number"
-F 13 "HDR6" H 6450 10350 50  0001 L CNN "package"
-F 14 "yes" H 6450 10450 50  0001 L CNN "rohs"
-F 15 "+105°C" H 6450 10550 50  0001 L CNN "temperature range high"
-F 16 "-40°C" H 6450 10650 50  0001 L CNN "temperature range low"
-	1    6450 8750
+P 6500 1150
+F 0 "J6" H 6258 1515 50  0000 C CNN
+F 1 "76825-0006" H 6258 1424 50  0000 C CNN
+F 2 "connector:Molex-76825-0006-0" H 6500 1650 50  0001 L CNN
+F 3 "https://www.molex.com/pdm_docs/sd/768250006_sd.pdf" H 6500 1750 50  0001 L CNN
+F 4 "Conn" H 6500 1850 50  0001 L CNN "category"
+F 5 "DUAL ROW RA HEADER TIN 6CKT" H 6500 1950 50  0001 L CNN "digikey description"
+F 6 "WM11971-ND" H 6500 2050 50  0001 L CNN "digikey part number"
+F 7 "yes" H 6500 2150 50  0001 L CNN "is connector"
+F 8 "yes" H 6500 2250 50  0001 L CNN "is male"
+F 9 "yes" H 6500 2350 50  0001 L CNN "lead free"
+F 10 "dc1b81f16b5cdc84" H 6500 2450 50  0001 L CNN "library id"
+F 11 "Molex" H 6500 2550 50  0001 L CNN "manufacturer"
+F 12 "538-76825-0006" H 6500 2650 50  0001 L CNN "mouser part number"
+F 13 "HDR6" H 6500 2750 50  0001 L CNN "package"
+F 14 "yes" H 6500 2850 50  0001 L CNN "rohs"
+F 15 "+105°C" H 6500 2950 50  0001 L CNN "temperature range high"
+F 16 "-40°C" H 6500 3050 50  0001 L CNN "temperature range low"
+	1    6500 1150
 	1    0    0    -1  
 $EndComp
-Text Label 6350 8750 0    50   ~ 0
-12V
+Text Label 6400 1150 0    50   ~ 0
+12V_in
 $Comp
 L power:GND #PWR0127
 U 1 1 5FE0FF44
-P 6350 9750
-F 0 "#PWR0127" H 6350 9500 50  0001 C CNN
-F 1 "GND" V 6355 9577 50  0000 C CNN
-F 2 "" H 6350 9750 50  0001 C CNN
-F 3 "" H 6350 9750 50  0001 C CNN
-	1    6350 9750
+P 6400 2150
+F 0 "#PWR0127" H 6400 1900 50  0001 C CNN
+F 1 "GND" V 6405 1977 50  0000 C CNN
+F 2 "" H 6400 2150 50  0001 C CNN
+F 3 "" H 6400 2150 50  0001 C CNN
+	1    6400 2150
 	0    -1   -1   0   
 $EndComp
-Text Label 6350 8950 0    50   ~ 0
-12V
-Text Label 6350 9150 0    50   ~ 0
-12V
+Text Label 6400 1350 0    50   ~ 0
+12V_in
+Text Label 6400 1550 0    50   ~ 0
+12V_in
 $Comp
 L power:GND #PWR0128
 U 1 1 5FFCB6FA
-P 6350 9350
-F 0 "#PWR0128" H 6350 9100 50  0001 C CNN
-F 1 "GND" V 6355 9222 50  0000 R CNN
-F 2 "" H 6350 9350 50  0001 C CNN
-F 3 "" H 6350 9350 50  0001 C CNN
-	1    6350 9350
+P 6400 1750
+F 0 "#PWR0128" H 6400 1500 50  0001 C CNN
+F 1 "GND" V 6405 1622 50  0000 R CNN
+F 2 "" H 6400 1750 50  0001 C CNN
+F 3 "" H 6400 1750 50  0001 C CNN
+	1    6400 1750
 	0    -1   -1   0   
 $EndComp
 $Comp
 L power:GND #PWR0129
 U 1 1 5FFCC514
-P 6350 9550
-F 0 "#PWR0129" H 6350 9300 50  0001 C CNN
-F 1 "GND" V 6355 9422 50  0000 R CNN
-F 2 "" H 6350 9550 50  0001 C CNN
-F 3 "" H 6350 9550 50  0001 C CNN
-	1    6350 9550
+P 6400 1950
+F 0 "#PWR0129" H 6400 1700 50  0001 C CNN
+F 1 "GND" V 6405 1822 50  0000 R CNN
+F 2 "" H 6400 1950 50  0001 C CNN
+F 3 "" H 6400 1950 50  0001 C CNN
+	1    6400 1950
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -2141,4 +2141,89 @@ Text Label 11850 2550 2    50   ~ 0
 STEPPER1_notENABLE
 Text Label 14450 5350 0    50   ~ 0
 OutputSignal_out
+$Comp
+L Relay:UMS05-1A80-75L K1
+U 1 1 6052945E
+P 7750 1100
+F 0 "K1" V 8167 1100 50  0000 C CNN
+F 1 "J115F11AH12VDCS61.5U" V 8076 1100 50  0000 C CNN
+F 2 "Relay_THT:Relay_StandexMeder_UMS" H 8050 1050 50  0001 L CNN
+F 3 "https://standexelectronics.com/de/produkte/ums-reed-relais/" H 7750 1100 50  0001 C CNN
+	1    7750 1100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D D7
+U 1 1 6052B831
+P 7750 1850
+F 0 "D7" H 7750 2066 50  0000 C CNN
+F 1 "MMSD4148" H 7750 1975 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-123" H 7750 1850 50  0001 C CNN
+F 3 "~" H 7750 1850 50  0001 C CNN
+	1    7750 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NPN_BCE Q4
+U 1 1 6052C9F7
+P 8200 2200
+F 0 "Q4" H 8390 2246 50  0000 L CNN
+F 1 "TIP35CW" H 8390 2155 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-247-3_Vertical" H 8400 2300 50  0001 C CNN
+F 3 "~" H 8200 2200 50  0001 C CNN
+	1    8200 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7600 1850 7200 1850
+Wire Wire Line
+	7200 1850 7200 1300
+Wire Wire Line
+	7200 1300 7450 1300
+Wire Wire Line
+	8050 1300 8300 1300
+Wire Wire Line
+	8300 1300 8300 1850
+Wire Wire Line
+	7900 1850 8300 1850
+Connection ~ 8300 1850
+Wire Wire Line
+	8300 1850 8300 2000
+$Comp
+L power:GND #PWR0124
+U 1 1 6054B7FA
+P 8300 2400
+F 0 "#PWR0124" H 8300 2150 50  0001 C CNN
+F 1 "GND" H 8305 2227 50  0000 C CNN
+F 2 "" H 8300 2400 50  0001 C CNN
+F 3 "" H 8300 2400 50  0001 C CNN
+	1    8300 2400
+	1    0    0    -1  
+$EndComp
+Text Label 8000 2200 2    50   ~ 0
+POWER_ON
+Wire Wire Line
+	7200 1300 7200 900 
+Wire Wire Line
+	7200 900  7450 900 
+Connection ~ 7200 1300
+$Comp
+L Device:Fuse F1
+U 1 1 6055518B
+P 8600 900
+F 0 "F1" V 8403 900 50  0000 C CNN
+F 1 "TR/3216FF25-R" V 8494 900 50  0000 C CNN
+F 2 "Fuse:Fuse_1206_3216Metric" V 8530 900 50  0001 C CNN
+F 3 "~" H 8600 900 50  0001 C CNN
+	1    8600 900 
+	0    1    1    0   
+$EndComp
+Text Label 8750 900  0    50   ~ 0
+12V
+Text Label 7200 1300 2    50   ~ 0
+12V_in
+Wire Wire Line
+	8050 900  8450 900 
+Text Label 11850 1850 2    50   ~ 0
+POWER_ON
 $EndSCHEMATC
