@@ -67,7 +67,8 @@ Brushed DC Motor Control:
 
 To future proof the board against different motor choices, two high current bridges (BTN8982TA) are used.
 The manufacturer (Infineon) actually has an Arduino shield, so the pinout is exactly the same as what they used in their product.
-See the schematic: https://www.infineon.com/dgdl/Infineon-Motor_Control_Shield_with_BTN8982TA_for_Arduino-UserManual-v02_00-EN.pdf?fileId=5546d4624ca27d02014cb20b89867eed
+See the schematic:
+https://www.infineon.com/dgdl/Infineon-Motor_Control_Shield_with_BTN8982TA_for_Arduino-UserManual-v02_00-EN.pdf?fileId=5546d4624ca27d02014cb20b89867eed
 
 The pinout is the same as that schematic, image is in the PDF.
 
