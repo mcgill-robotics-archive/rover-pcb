@@ -4,6 +4,7 @@
  * https://github.com/mcgill-robotics/rover-pcb/blob/science-dev/Projects/science.pdf)
  * 
  * ----[Fault Detection/Shutdown Lines]----
+ * D51 - POWER_ON: Set high to enable the relay, allowing the rest of the board to get power.
  * D52 - STEPPER_LINE_OK: High when the 5V regulator channel feeding the stepper motors is within an acceptable range.
  * D53 - OTHER_LINE_OK: High when the 5V regulator channel feeding everything else is within an acceptable range.
  * D7 - REG_SHUTDOWN: Set high to shut down 5V regulator
@@ -44,6 +45,10 @@
  * ----[USB Debugging]----
  * D0, D1 (already assigned by default)
  * 
+ * ----[Serial 1]----
+ * D18 - UART TX
+ * D19 - UART RX
+ * 
  * TODO: Figure out the rest of UART(serial) communications, and maybe free up some pins from the CCD sensor.
  * TODO: Figure out what to write to UART(serial) ports
  * 
@@ -52,6 +57,7 @@
  * Source for SPI: https://www.arduino.cc/en/Reference/DueExtendedSPI
  * 
  * ----[I2C]----
+ * Will use the built-in Wire library: https://www.arduino.cc/en/reference/wire
  * D20 - SDA
  * D21 - SCL
  * 
@@ -64,6 +70,7 @@
 #include <Wire.h>
 #include <SPI.h>
 
+const int POWER_ON = 51;
 const int STEPPER_LINE_OK = 52;
 const int OTHER_LINE_OK = 53;
 const int REG_SHUTDOWN = 7;
@@ -91,8 +98,12 @@ volatile int OTHER_LINE_FAULT = 0;
 volatile int STEPPER1_FAULT = 0;
 volatile int STEPPER2_FAULT = 0;
 
+const int UART_BAUD_RATE = 9600;
+const int I2C_BUS_ADDRESS = 0;
+
 void setup() {
   // TODO: Look into CCD pins and figure out whether they are outputs or inputs
+  pinMode(POWER_ON, OUTPUT);
   pinMode(STEPPER_LINE_OK, INPUT);
   pinMode(OTHER_LINE_OK, INPUT);
   pinMode(REG_SHUTDOWN, OUTPUT);
@@ -115,6 +126,9 @@ void setup() {
   pinMode(ICG, OUTPUT);
 
   // TODO: Communications setup (UART, I2C, SPI)
+  Serial.begin(UART_BAUD_RATE);
+  Serial1.begin(UART_BAUD_RATE);
+  Wire.begin(I2C_BUS_ADDRESS);
 
   // Initial conditions for active low pins
   digitalWrite(LASER1_CONTROL, HIGH);
@@ -123,6 +137,8 @@ void setup() {
   digitalWrite(REG_SHUTDOWN, HIGH);
 
   // TODO: Tell the power board that the science board ready to receive power
+  // Update(18/03/2021): We now have an onboard relay
+  digitalWrite(POWER_ON, HIGH);
 
   // Switch on the regulator
   digitalWrite(REG_SHUTDOWN, LOW);
@@ -133,9 +149,8 @@ void setup() {
   //Attach interrupts to their ISR's (Interrupt Service Routines):
   attachInterrupt(digitalPinToInterrupt(STEPPER_LINE_OK), stepperlinefault_ISR, LOW);
   attachInterrupt(digitalPinToInterrupt(OTHER_LINE_OK), otherlinefault_ISR, LOW);
-  attachInterrupt(digitalPinToInterrupt(OTHER_LINE_OK), otherlinefault_ISR, LOW);
-  attachInterrupt(digitalPinToInterrupt(notFAULT1), stepperonefault_ISR, HIGH);
-  attachInterrupt(digitalPinToInterrupt(notFAULT2), steppertwofault_ISR, HIGH);
+  attachInterrupt(digitalPinToInterrupt(notFAULT1), stepperonefault_ISR, LOW);
+  attachInterrupt(digitalPinToInterrupt(notFAULT2), steppertwofault_ISR, LOW);
   //(ISR's are at the bottom)
 
   // TODO: Tell the power board and the main computer that the science board is fully booted
@@ -147,9 +162,116 @@ void loop() {
 
 }
 
+// ___[STEPPERS]_______________________________________________________________________________
+// Important note: There isn't enough current to run both steppers at once,
+// so it's very important to make sure at most one of them is active at any given time.
+// TODO: Write a unit test, do test, uncomment when done
 
-// [INTERRUPTS]
+//unsigned int MINIMUM_STEP_PULSE = 3; // Microseconds
+//int MINIMUM_DISABLE_TIME = 1;        // Milliseconds
+//int MINIMUM_ENABLE_TIME = 1;         // Milliseconds
+//
+//// 0 for forward, 1 for backward
+//bool STEPPER1_FORWARD = true;
+//bool STEPPER2_FORWARD = true;
+//
+//int STEPPER1_ELECTRICAL_ANGLE = 45;
+//int STEPPER2_ELECTRICAL_ANGLE = 45;
+//
+//void stepper1_step(){
+//
+//  // Disable the other stepper and give it time to
+//  // shut down, just to make sure
+//  digitalWrite(STEPPER2_notENABLE, HIGH);
+//  delay(MINIMUM_DISABLE_TIME);
+//
+//  // Enable this stepper and give it time to turn on
+//  digitalWrite(STEPPER1_notENABLE, LOW);
+//  delay(MINIMUM_ENABLE_TIME);
+//  
+//  // One last check if the other stepper is disabled, and then pulse
+//  // the driver to step forward
+//
+//  // The checks might seem paranoid, but they could be the difference
+//  // between a working board and e-waste
+//  
+//  if(STEPPER1_notENABLE){
+//    digitalWrite(STEPPER1_STEP, HIGH);
+//    delayMicroseconds(MINIMUM_STEP_PULSE);
+//    digitalWrite(STEPPER1_STEP, LOW);
+//  }
+//
+//  // Finally, disable this stepper
+//  digitalWrite(STEPPER1_notENABLE, HIGH);
+//  delay(MINIMUM_DISABLE_TIME);
+//
+//  if(STEPPER1_FORWARD){
+//    STEPPER1_ELECTRICAL_ANGLE += 6;
+//  }else{
+//    STEPPER1_ELECTRICAL_ANGLE -= 6;
+//  }
+//  
+//}
+//
+//void stepper2_step(){
+//
+//  // Disable the other stepper and give it time to
+//  // shut down, just to make sure
+//  digitalWrite(STEPPER1_notENABLE, HIGH);
+//  delay(MINIMUM_DISABLE_TIME);
+//
+//  // Enable this stepper and give it time to turn on
+//  digitalWrite(STEPPER2_notENABLE, LOW);
+//  delay(MINIMUM_ENABLE_TIME);
+//  
+//  // One last check if the other stepper is disabled, and then pulse
+//  // the driver to step forward
+//
+//  // The checks might seem paranoid, but they could be the difference
+//  // between a working board and e-waste
+//  
+//  if(STEPPER1_notENABLE){
+//    digitalWrite(STEPPER2_STEP, HIGH);
+//    delayMicroseconds(MINIMUM_STEP_PULSE);
+//    digitalWrite(STEPPER2_STEP, LOW);
+//  }
+//
+//  // Finally, disable this stepper
+//  digitalWrite(STEPPER2_notENABLE, HIGH);
+//  delay(MINIMUM_DISABLE_TIME);
+//
+//  if(STEPPER2_FORWARD){
+//    STEPPER2_ELECTRICAL_ANGLE += 6;
+//  }else{
+//    STEPPER2_ELECTRICAL_ANGLE -= 6;
+//  }
+//  
+//}
+//
+//void stepper1_changedirection(){
+//  
+//  digitalWrite(STEPPER1_DIRECTION, HIGH);
+//  delayMicroseconds(3);
+//  digitalWrite(STEPPER1_DIRECTION, LOW);
+//  
+//  STEPPER1_FORWARD = !STEPPER1_FORWARD;
+//}
+//
+//void stepper2_changedirection(){
+//  
+//  digitalWrite(STEPPER2_DIRECTION, HIGH);
+//  delayMicroseconds(3);
+//  digitalWrite(STEPPER2_DIRECTION, LOW);
+//  
+//  STEPPER2_FORWARD = !STEPPER2_FORWARD;
+//}
+
+// ___[INTERRUPTS]______________________________________________________________________
+
 void stepperlinefault_ISR(){
+  // Turn off relay
+  digitalWrite(51, LOW);
+  
   // Shut down steppers before anything else. If there's a fault in the stepper line,
   // odds are that the steppers will get hurt first
   digitalWrite(44, HIGH);
@@ -175,6 +297,8 @@ void stepperlinefault_ISR(){
 }
 
 void otherlinefault_ISR(){
+  // Turn off relay
+  digitalWrite(51, LOW);
 
   // Shut down the board, starting with the brushed motor
   digitalWrite(12, LOW);
@@ -198,8 +322,11 @@ void otherlinefault_ISR(){
 }
 
 void stepperonefault_ISR(){
-  // Shut down steppers (starting with #1) before anything else. If there's a fault in the stepper line,
-  // odds are that the steppers will get hurt first
+  // Turn off relay
+  digitalWrite(51, LOW);
+  
+  // Shut down steppers (starting with #1) before anything else. If there's a fault in that stepper,
+  // odds are that it will get hurt first
   digitalWrite(44, HIGH);
   digitalWrite(50, HIGH);
 
@@ -223,8 +350,11 @@ void stepperonefault_ISR(){
 }
 
 void steppertwofault_ISR(){
-  // Shut down steppers (starting with #2) before anything else. If there's a fault in the stepper line,
-  // odds are that the steppers will get hurt first
+  // Turn off relay
+  digitalWrite(51, LOW);
+  
+  // Shut down steppers (starting with #1) before anything else. If there's a fault in that stepper,
+  // odds are that it will get hurt first
   digitalWrite(50, HIGH);
   digitalWrite(44, HIGH);
 
@@ -239,7 +369,7 @@ void steppertwofault_ISR(){
   STEPPER2_FAULT = 1;
 
   // Maybe some code here to tell the power board and the main computer that something
-  // went wrong with stepper #1?
+  // went wrong with stepper #2?
 
   // Hang until power is cycled
   while(1){
