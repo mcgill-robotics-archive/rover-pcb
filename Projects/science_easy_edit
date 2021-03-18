@@ -15,7 +15,8 @@ D51 - POWER_ON: Set high to close relay, enabling power to reach the rest of the
 
 1- Regulator
 
-5V is regulated down from 12V onboard. The regulator (LT3501) is a dual-channel, dual-output buck regulator that can supply 3A from each input. One of those channels is used for the stepper motors, and the other is used for the rest of our 5V needs (lasers, the CCD sensor assembly, onboard logic)
+5V is regulated down from 12V onboard. The regulator (LT3501) is a dual-channel, dual-output buck regulator that can supply 3A from each input.
+One of those channels is used for the stepper motors, and the other is used for the rest of our 5V needs (lasers, the CCD sensor assembly, onboard logic)
 
 D52 - STEPPER_LINE_OK: High when the regulator channel feeding the stepper motors is within an acceptable range.
 
@@ -26,7 +27,8 @@ D7 - REG_SHUTDOWN: Regulator shutdown functionality
 
 2- Steppers
 
-The steppers are driven with DRV8834 controllers, with each having one fault indication line. The numbering is arbitrary for now, and the steppers should be named later on depending on where exactly they will be.
+The steppers are driven with DRV8834 controllers, with each having one fault indication line.
+The numbering is arbitrary for now, and the steppers should be named later on depending on where exactly they will be.
 
 D38 - notFAULT1: High when stepper #1 is not in a fault condition.
 
@@ -36,21 +38,22 @@ D44 - STEPPER1_notENABLE: Stepper #1 is enabled when this pin is low.
 
 D50 - STEPPER2_notENABLE: Stepper #2 is enabled when this pin is low.
 
-There isn’t enough current to run both steppers at once, so either D50 or D44 has to be high at any given time. As of now, this is fine because Science doesn’t need both steppers to be active at the same time. If it does change, we will need to pick a beefier regulator in a later version of the board.
+There isn’t enough current to run both steppers at once, so either D50 or D44 has to be high at any given time.
+As of now, this is fine because Science doesn’t need both steppers to be active at the same time. If it does change, we will need to pick a beefier
+regulator in a later version of the board.
 
 
 Stepper Control:
 
-The DRV8834 stepper drivers are being used in “Indexer Mode” and wired for 16 microsteps/step resolution. When in this mode, the chip sorts out the PWM internally and only needs a step signal and direction data. Again, the numbering is arbitrary for now and the steppers should be named later depending on what exactly they will do.
+The DRV8834 stepper drivers are being used in “Indexer Mode” and wired for 16 microsteps/step resolution. When in this mode,
+the chip sorts out the PWM internally and only needs a step signal and direction data.
+Again, the numbering is arbitrary for now and the steppers should be named later depending on what exactly they will do.
 
 Stepper #1:
 
 D42 - STEPPER1_STEP: Stepper will advance one step on the rising edge of this pin.
 
 D40 - STEPPER1_DIRECTION: Reverses stepper direction on rising edge.
-
-
-
 
 
 Stepper #2:
@@ -62,45 +65,25 @@ D46 - STEPPER1_DIRECTION: Reverses stepper direction on rising edge.
 
 Brushed DC Motor Control:
 
-To future proof the board against different motor choices, two high current bridges (BTN8982TA) are used. The manufacturer (Infineon) actually has an Arduino shield, so the pinout is exactly the same as what they used in their product. See the schematic: https://www.infineon.com/dgdl/Infineon-Motor_Control_Shield_with_BTN8982TA_for_Arduino-UserManual-v02_00-EN.pdf?fileId=5546d4624ca27d02014cb20b89867eed
+To future proof the board against different motor choices, two high current bridges (BTN8982TA) are used.
+The manufacturer (Infineon) actually has an Arduino shield, so the pinout is exactly the same as what they used in their product.
+See the schematic: https://www.infineon.com/dgdl/Infineon-Motor_Control_Shield_with_BTN8982TA_for_Arduino-UserManual-v02_00-EN.pdf?fileId=5546d4624ca27d02014cb20b89867eed
 
-
-
-
-The pinout is the same as that schematic:
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+The pinout is the same as that schematic, image is in the PDF.
 
 
 Laser:
 
-Since the laser has a 250mA current requirement and no control logic, it is switched with a BJT transistor in a common emitter configuration. This means that the pin is active low.
+Since the laser has a 250mA current requirement and no control logic, it is switched with a BJT transistor in a common emitter configuration.
+This means that the pin is active low.
 
 D8 - LASER1_CONTROL: Laser is on when this pin is low.
 
 
 CCD Sensor Control
 
-The CCD sensor picked by Science is TCD1304DG with a cryptic datasheet. There is much work to be done to figure out what we need to do in order to get data from it, but for now they are wired like so:
+The CCD sensor picked by Science is TCD1304DG with a cryptic datasheet. There is much work to be done to figure out what we need to do in order to get data from it,
+but for now they are wired like so:
 
 D15 - OutputSignal_out: “out” as in “out to Arduino”. As a side note, this pin is also a serial receive pin so that might be a possibility.
 
