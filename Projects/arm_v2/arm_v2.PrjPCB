@@ -460,10 +460,10 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=NGLTGAHM
 
 [Document26]
-DocumentPath=..\..\Libraries\SCHLib\Molex 1054051112.SchLib
+DocumentPath=..\..\Libraries\PCBLib\Molex 1053141112.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -477,10 +477,10 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=DSXHAAQA
+DocumentUniqueId=YDAMWXNI
 
 [Document27]
-DocumentPath=..\..\Libraries\PCBLib\Molex 1054051112.PcbLib
+DocumentPath=..\..\Libraries\SCHLib\Molex 1053141112.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -494,7 +494,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=AIJYCWFJ
+DocumentUniqueId=XTPQEYGF
 
 [GeneratedDocument1]
 DocumentPath=Project Outputs for arm_v2\Design Rule Check - arm_v2.html
