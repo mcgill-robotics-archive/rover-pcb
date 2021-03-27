@@ -1,0 +1,8 @@
+Change Component Comment : Designator=F8 Old Comment=6 A  New Comment=6 A
+Change Component Designator: OldDesignator= NewDesignator=R28
+Change Component Designator: OldDesignator=R200 NewDesignator=R27
+Change Net Name : Old Net Name=Net_1 New Net Name=NetR28_1
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component R28 
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component U2 TM4C123GH6PMI
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component U3 FT230XQ
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component U4 INA3221AQRGVRQ1
