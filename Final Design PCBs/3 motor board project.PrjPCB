@@ -72,7 +72,7 @@ GenerateClassCluster=0
 DocumentUniqueId=NGLTGAHM
 
 [Document3]
-DocumentPath=..\..\..\Downloads\Molex 1054051112.PcbLib
+DocumentPath=..\..\..\Downloads\Molex 1053141112.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -86,7 +86,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=AIJYCWFJ
+DocumentUniqueId=YDAMWXNI
 
 [Document4]
 DocumentPath=..\..\..\Documents\AltiumLL\SamacSys.PcbLib
