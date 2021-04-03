@@ -1,0 +1,11 @@
+Change Component Footprint: Designator=F4 Old Footprint=PIN-W2/E2.8 New Footprint=FUSC3215X83N
+Change Component Comment : Designator=F4 Old Comment=15A New Comment=0685P9150-01
+Change component parameters: Designator = "F4"; Footprint = "FUSC3215X83N"; UniqueID = "\YLONSCVO"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MF"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MP"; Value = "0685P9150-01"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component F1 550mA

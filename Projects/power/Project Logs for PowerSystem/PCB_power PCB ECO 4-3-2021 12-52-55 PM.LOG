@@ -1,0 +1,35 @@
+Removed Pin From Net: NetName=RELAY_B Pin=F0-1
+Removed Pin From Net: NetName=NetDrive_2 Pin=F0-2
+Removed Pin From Net: NetName=RELAY_B Pin=F3-1
+Removed Pin From Net: NetName=NetARM_2 Pin=F3-2
+Removed Member From Class: ClassName=TM4C123GH6PMI Member=F0
+Removed Member From Class: ClassName=TM4C123GH6PMI Member=F3
+Added Component: Designator=F6(FUSC3215X83N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Availability"; Value = "Warning"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/0685P9500-01/Bel%20Fuse/view-part/4616001/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Bel Fuse"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "0685P9500-01"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "1206 Bel Fuse Inc."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Purchase-URL"; Value = "https://pricing.snapeda.com/search/part/0685P9500-01/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/0685P9500-01/Bel%20Fuse/view-part/4616001/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=F7(FUSC3215X83N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Availability"; Value = "Warning"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/0685P9500-01/Bel%20Fuse/view-part/4616001/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Bel Fuse"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "0685P9500-01"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "1206 Bel Fuse Inc."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Purchase-URL"; Value = "https://pricing.snapeda.com/search/part/0685P9500-01/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/0685P9500-01/Bel%20Fuse/view-part/4616001/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=RELAY_B Pin=F6-1
+Added Pin To Net: NetName=NetDrive_2 Pin=F6-2
+Added Pin To Net: NetName=RELAY_B Pin=F7-1
+Added Pin To Net: NetName=NetARM_2 Pin=F7-2
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component F1 550mA
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component F6 0685P9500-01
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component F7 0685P9500-01
