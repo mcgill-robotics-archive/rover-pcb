@@ -1,0 +1,7 @@
+Added Pin To Net: NetName=GND Pin=J?-1
+Added Pin To Net: NetName=GND Pin=J?-2
+Added Pin To Net: NetName=NetF6_2 Pin=F6-2
+Added Pin To Net: NetName=NetF6_2 Pin=J?-3
+Added Pin To Net: NetName=NetF6_2 Pin=J?-4
+Added Net: Name=NetF6_2
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component F1 550mA
