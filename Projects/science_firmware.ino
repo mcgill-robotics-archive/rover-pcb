@@ -31,7 +31,13 @@
  * D13 - INH_2: (Inhibit Bridge 2)
  * 
  * ----[Laser]----
- * D8- LASER1_CONTROL: Laser is on when this pin is low
+ * D8 - LASER1_CONTROL: Laser is on when this pin is low
+ * 
+ * ----[LED's]----
+ * D32 - LED_CONTROL: LED's are on when this pin is low
+ * 
+ * ----[Solenoid]----
+ * D22 - SOLENOID_ON: Solenoid is on when this pin is high
  * 
  * ----[CCD Sensor]----
  * TODO: Figure out how the sensor works
@@ -91,6 +97,8 @@ const int OutputSignal_out = 15;
 const int CCD_Clock = 16;
 const int SH = 17;
 const int ICG = 19;
+const int SOLENOID_ON = 22;
+const int LED_CONTROL = 32;
 
 // Failure conditions, in case they need to be communicated to the central computer
 volatile int STEPPER_LINE_FAULT = 0;
@@ -104,6 +112,8 @@ const int I2C_BUS_ADDRESS = 0;
 void setup() {
   // TODO: Look into CCD pins and figure out whether they are outputs or inputs
   pinMode(POWER_ON, OUTPUT);
+  pinMode(SOLENOID_ON, OUTPUT);
+  pinMode(LED_CONTROL, OUTPUT);
   pinMode(STEPPER_LINE_OK, INPUT);
   pinMode(OTHER_LINE_OK, INPUT);
   pinMode(REG_SHUTDOWN, OUTPUT);
@@ -135,8 +145,8 @@ void setup() {
   digitalWrite(STEPPER1_notENABLE, HIGH);
   digitalWrite(STEPPER2_notENABLE, HIGH);
   digitalWrite(REG_SHUTDOWN, HIGH);
+  digitalWrite(LED_CONTROL, HIGH);
 
-  // TODO: Tell the power board that the science board ready to receive power
   // Update(18/03/2021): We now have an onboard relay
   digitalWrite(POWER_ON, HIGH);
 
@@ -152,6 +162,10 @@ void setup() {
   attachInterrupt(digitalPinToInterrupt(notFAULT1), stepperonefault_ISR, LOW);
   attachInterrupt(digitalPinToInterrupt(notFAULT2), steppertwofault_ISR, LOW);
   //(ISR's are at the bottom)
+
+  // Turn on LED
+  digitalWrite(LED_CONTROL, LOW);
+
 
   // TODO: Tell the power board and the main computer that the science board is fully booted
   // and can receive commands
@@ -206,9 +220,9 @@ void loop() {
 //  delay(MINIMUM_DISABLE_TIME);
 //
 //  if(STEPPER1_FORWARD){
-//    STEPPER1_ELECTRICAL_ANGLE += 6;
+//    STEPPER1_ELECTRICAL_ANGLE += 1.8;
 //  }else{
-//    STEPPER1_ELECTRICAL_ANGLE -= 6;
+//    STEPPER1_ELECTRICAL_ANGLE -= 1.8;
 //  }
 //  
 //}
@@ -241,9 +255,9 @@ void loop() {
 //  delay(MINIMUM_DISABLE_TIME);
 //
 //  if(STEPPER2_FORWARD){
-//    STEPPER2_ELECTRICAL_ANGLE += 6;
+//    STEPPER2_ELECTRICAL_ANGLE += 1.8;
 //  }else{
-//    STEPPER2_ELECTRICAL_ANGLE -= 6;
+//    STEPPER2_ELECTRICAL_ANGLE -= 1.8;
 //  }
 //  
 //}
