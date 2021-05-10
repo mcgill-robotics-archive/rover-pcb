@@ -298,7 +298,7 @@ void stepper1_step(){
   // The checks might seem paranoid, but they could be the difference
   // between a working board and e-waste
   
-  if(STEPPER1_notENABLE){
+  if(STEPPER2_notENABLE){
     digitalWrite(STEPPER1_STEP, HIGH);
     delayMicroseconds(MINIMUM_STEP_PULSE);
     digitalWrite(STEPPER1_STEP, LOW);
