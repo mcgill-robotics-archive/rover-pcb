@@ -41,10 +41,10 @@
  * 
  * ----[CCD Sensor]----
  * TODO: Figure out how the sensor works
- * D15 - OutputSignal_out: “out” as in “out to Arduino”. As a side note, this pin is also a serial receive pin so that might be a possibility.
- * D16 - phiM(CCD_Clock): Clock output to CCD sensor.
- * D17 - SH: “Shift Gate” (???)
- * D19 - ICG: “Integration Clear Gate” (???)
+ * A3 - OutputSignal_out: “out” as in “out to Arduino”.
+ * D2 - phiM(CCD_Clock): Clock output to CCD sensor.
+ * D10 - SH: “Shift Gate” (???)
+ * D9 - ICG: “Integration Clear Gate” (???)
  * 
  * ----[COMMUNICATION LINES]----
  * 
@@ -75,6 +75,7 @@
 
 #include <Wire.h>
 #include <SPI.h>
+#include <IfxMotorControlShield.h>
 
 const int POWER_ON = 51;
 const int STEPPER_LINE_OK = 52;
@@ -93,10 +94,10 @@ const int IN_2 = 11;
 const int INH_1 = 12;
 const int INH_2 = 13;
 const int LASER1_CONTROL = 8;
-const int OutputSignal_out = 15;
-const int CCD_Clock = 16;
-const int SH = 17;
-const int ICG = 19;
+#define OutputSignal_out A3
+const int CCD_Clock = 2;
+const int SH = 10;
+const int ICG = 9;
 const int SOLENOID_ON = 22;
 const int LED_CONTROL = 32;
 
@@ -108,6 +109,12 @@ volatile int STEPPER2_FAULT = 0;
 
 const int UART_BAUD_RATE = 9600;
 const int I2C_BUS_ADDRESS = 0;
+
+// Brushless DC motor constants
+bool MOTOR_INIT_FAILED = false;
+bool MOTOR_ON = false;
+int speedvalue = 0;
+int acceleration = 5;
 
 void setup() {
   // TODO: Look into CCD pins and figure out whether they are outputs or inputs
@@ -163,6 +170,12 @@ void setup() {
   attachInterrupt(digitalPinToInterrupt(notFAULT2), steppertwofault_ISR, LOW);
   //(ISR's are at the bottom)
 
+  // Initialize brushless DC motor controller.
+  // Function returns true on failure, wtf?
+  if(ifxMcsBiDirectionalMotor.begin()){
+    MOTOR_INIT_FAILED = true;
+  }
+
   // Turn on LED
   digitalWrite(LED_CONTROL, LOW);
 
@@ -174,111 +187,211 @@ void setup() {
 void loop() {
   // put your main code here, to run repeatedly:
 
+  // Closed loop motor control
+  if(MOTOR_ON){
+    
+    if(ifxMcsBiDirectionalMotor.getCurrentSense() < IFX_MCS_CRITICALCURRENTSENSE)
+   {
+
+      speedvalue += acceleration;
+      if(speedvalue > 255 && acceleration > 0)
+      {
+        acceleration = -acceleration;
+        speedvalue = 255;
+      }
+      if(speedvalue < -255 && acceleration < 0)
+      {
+        acceleration = -acceleration;
+        speedvalue = -255;
+      }
+      
+      ifxMcsBiDirectionalMotor.setBiDirectionalSpeed(speedvalue);
+      
+    //if speed was set to 0, the motor has to be restarted
+      if(!ifxMcsBiDirectionalMotor.getRunning())
+        ifxMcsBiDirectionalMotor.start();
+   }
+   else
+   {
+    // Something went wrong, stop the motor
+     stopMotor();
+   }
+  }
+
 }
 
-// ___[STEPPERS]_______________________________________________________________________________
+// ___[BRUSHLESS DC MOTOR]___________________________________________
+void startMotorWithSpeed(int speedvalue){
+  if(!MOTOR_INIT_FAILED){
+    ifxMcsBiDirectionalMotor.setBiDirectionalSpeed(speedvalue);
+    ifxMcsBiDirectionalMotor.start();
+    MOTOR_ON = true;
+  }
+}
+
+void stopMotor(){
+  ifxMcsBiDirectionalMotor.stop();
+  speedvalue = 0;
+  MOTOR_ON = false;
+}
+
+// ___[LED]____________________________________________________________
+
+void LEDon(){
+  digitalWrite(LED_CONTROL, LOW);
+}
+
+void LEDoff(){
+  digitalWrite(LED_CONTROL, HIGH);
+}
+
+// ___[SOLENOID]_______________________________________________________
+
+void solenoidOn(){
+  digitalWrite(SOLENOID_ON, HIGH);
+}
+
+void solenoidOff(){
+  digitalWrite(SOLENOID_ON, LOW);
+}
+
+// ___[LASER]__________________________________________________________
+
+void laserOn(){
+  digitalWrite(LASER1_CONTROL, LOW);
+}
+
+void laserOff(){
+  digitalWrite(LASER1_CONTROL, HIGH);
+}
+
+// ___[STEPPERS]_______________________________________________________
 // Important note: There isn't enough current to run both steppers at once,
 // so it's very important to make sure at most one of them is active at any given time.
-// TODO: Write a unit test, do test, uncomment when done
 
-//unsigned int MINIMUM_STEP_PULSE = 3; // Microseconds
-//int MINIMUM_DISABLE_TIME = 1;        // Milliseconds
-//int MINIMUM_ENABLE_TIME = 1;         // Milliseconds
-//
-//// 0 for forward, 1 for backward
-//bool STEPPER1_FORWARD = true;
-//bool STEPPER2_FORWARD = true;
-//
-//int STEPPER1_ELECTRICAL_ANGLE = 45;
-//int STEPPER2_ELECTRICAL_ANGLE = 45;
-//
-//void stepper1_step(){
-//
-//  // Disable the other stepper and give it time to
-//  // shut down, just to make sure
-//  digitalWrite(STEPPER2_notENABLE, HIGH);
-//  delay(MINIMUM_DISABLE_TIME);
-//
-//  // Enable this stepper and give it time to turn on
-//  digitalWrite(STEPPER1_notENABLE, LOW);
-//  delay(MINIMUM_ENABLE_TIME);
-//  
-//  // One last check if the other stepper is disabled, and then pulse
-//  // the driver to step forward
-//
-//  // The checks might seem paranoid, but they could be the difference
-//  // between a working board and e-waste
-//  
-//  if(STEPPER1_notENABLE){
-//    digitalWrite(STEPPER1_STEP, HIGH);
-//    delayMicroseconds(MINIMUM_STEP_PULSE);
-//    digitalWrite(STEPPER1_STEP, LOW);
-//  }
-//
-//  // Finally, disable this stepper
-//  digitalWrite(STEPPER1_notENABLE, HIGH);
-//  delay(MINIMUM_DISABLE_TIME);
-//
-//  if(STEPPER1_FORWARD){
-//    STEPPER1_ELECTRICAL_ANGLE += 1.8;
-//  }else{
-//    STEPPER1_ELECTRICAL_ANGLE -= 1.8;
-//  }
-//  
-//}
-//
-//void stepper2_step(){
-//
-//  // Disable the other stepper and give it time to
-//  // shut down, just to make sure
-//  digitalWrite(STEPPER1_notENABLE, HIGH);
-//  delay(MINIMUM_DISABLE_TIME);
-//
-//  // Enable this stepper and give it time to turn on
-//  digitalWrite(STEPPER2_notENABLE, LOW);
-//  delay(MINIMUM_ENABLE_TIME);
-//  
-//  // One last check if the other stepper is disabled, and then pulse
-//  // the driver to step forward
-//
-//  // The checks might seem paranoid, but they could be the difference
-//  // between a working board and e-waste
-//  
-//  if(STEPPER1_notENABLE){
-//    digitalWrite(STEPPER2_STEP, HIGH);
-//    delayMicroseconds(MINIMUM_STEP_PULSE);
-//    digitalWrite(STEPPER2_STEP, LOW);
-//  }
-//
-//  // Finally, disable this stepper
-//  digitalWrite(STEPPER2_notENABLE, HIGH);
-//  delay(MINIMUM_DISABLE_TIME);
-//
-//  if(STEPPER2_FORWARD){
-//    STEPPER2_ELECTRICAL_ANGLE += 1.8;
-//  }else{
-//    STEPPER2_ELECTRICAL_ANGLE -= 1.8;
-//  }
-//  
-//}
-//
-//void stepper1_changedirection(){
-//  
-//  digitalWrite(STEPPER1_DIRECTION, HIGH);
-//  delayMicroseconds(3);
-//  digitalWrite(STEPPER1_DIRECTION, LOW);
-//  
-//  STEPPER1_FORWARD = !STEPPER1_FORWARD;
-//}
-//
-//void stepper2_changedirection(){
-//  
-//  digitalWrite(STEPPER2_DIRECTION, HIGH);
-//  delayMicroseconds(3);
-//  digitalWrite(STEPPER2_DIRECTION, LOW);
-//  
-//  STEPPER2_FORWARD = !STEPPER2_FORWARD;
-//}
+unsigned int MINIMUM_STEP_PULSE = 3; // Microseconds
+int MINIMUM_DISABLE_TIME = 1;        // Milliseconds
+int MINIMUM_ENABLE_TIME = 1;         // Milliseconds
+
+// 0 for forward, 1 for backward
+bool STEPPER1_FORWARD = true;
+bool STEPPER2_FORWARD = true;
+
+double STEPPER1_CURRENT_ANGLE = 45;
+double STEPPER2_CURRENT_ANGLE = 45;
+double ANGLE_PER_STEP = 1.8;
+
+void stepper1_step(){
+
+  // Disable the other stepper and give it time to
+  // shut down, just to make sure
+  digitalWrite(STEPPER2_notENABLE, HIGH);
+  delay(MINIMUM_DISABLE_TIME);
+
+  // Enable this stepper and give it time to turn on
+  digitalWrite(STEPPER1_notENABLE, LOW);
+  delay(MINIMUM_ENABLE_TIME);
+  
+  // One last check if the other stepper is disabled, and then pulse
+  // the driver to step forward
+
+  // The checks might seem paranoid, but they could be the difference
+  // between a working board and e-waste
+  
+  if(STEPPER1_notENABLE){
+    digitalWrite(STEPPER1_STEP, HIGH);
+    delayMicroseconds(MINIMUM_STEP_PULSE);
+    digitalWrite(STEPPER1_STEP, LOW);
+  }
+
+  // Finally, disable this stepper
+  digitalWrite(STEPPER1_notENABLE, HIGH);
+  delay(MINIMUM_DISABLE_TIME);
+
+  // Internally keep track of the current angle,
+  // after everything else is done
+
+  if(STEPPER1_FORWARD){
+    
+    STEPPER1_CURRENT_ANGLE += ANGLE_PER_STEP;
+    if(STEPPER1_CURRENT_ANGLE >= 360){
+      STEPPER1_CURRENT_ANGLE -= 360;
+    }
+    
+  }else{
+    
+    STEPPER1_CURRENT_ANGLE -= ANGLE_PER_STEP;
+    if(STEPPER1_CURRENT_ANGLE < 0){
+      STEPPER1_CURRENT_ANGLE += 360;
+    }
+  }
+  
+}
+
+void stepper2_step(){
+
+  // Disable the other stepper and give it time to
+  // shut down, just to make sure
+  digitalWrite(STEPPER1_notENABLE, HIGH);
+  delay(MINIMUM_DISABLE_TIME);
+
+  // Enable this stepper and give it time to turn on
+  digitalWrite(STEPPER2_notENABLE, LOW);
+  delay(MINIMUM_ENABLE_TIME);
+  
+  // One last check if the other stepper is disabled, and then pulse
+  // the driver to step forward
+
+  // The checks might seem paranoid, but they could be the difference
+  // between a working board and e-waste
+  
+  if(STEPPER1_notENABLE){
+    digitalWrite(STEPPER2_STEP, HIGH);
+    delayMicroseconds(MINIMUM_STEP_PULSE);
+    digitalWrite(STEPPER2_STEP, LOW);
+  }
+
+  // Finally, disable this stepper
+  digitalWrite(STEPPER2_notENABLE, HIGH);
+  delay(MINIMUM_DISABLE_TIME);
+
+  // Internally keep track of the current angle,
+  // after everything else is done
+
+  if(STEPPER1_FORWARD){
+    
+    STEPPER1_CURRENT_ANGLE += ANGLE_PER_STEP;
+    if(STEPPER1_CURRENT_ANGLE >= 360){
+      STEPPER1_CURRENT_ANGLE -= 360;
+    }
+    
+  }else{
+    
+    STEPPER1_CURRENT_ANGLE -= ANGLE_PER_STEP;
+    if(STEPPER1_CURRENT_ANGLE < 0){
+      STEPPER1_CURRENT_ANGLE += 360;
+    }
+  }
+  
+}
+
+void stepper1_changedirection(){
+  
+  digitalWrite(STEPPER1_DIRECTION, HIGH);
+  delayMicroseconds(3);
+  digitalWrite(STEPPER1_DIRECTION, LOW);
+  
+  STEPPER1_FORWARD = !STEPPER1_FORWARD;
+}
+
+void stepper2_changedirection(){
+  
+  digitalWrite(STEPPER2_DIRECTION, HIGH);
+  delayMicroseconds(3);
+  digitalWrite(STEPPER2_DIRECTION, LOW);
+  
+  STEPPER2_FORWARD = !STEPPER2_FORWARD;
+}
 
 // ___[INTERRUPTS]______________________________________________________________________
 
@@ -295,9 +408,10 @@ void stepperlinefault_ISR(){
   digitalWrite(7, HIGH);
 
   // Shut down the rest of the board, starting with the brushed motor
-  digitalWrite(12, LOW);
-  digitalWrite(13, LOW);
-  digitalWrite(8, HIGH);
+  stopMotor();
+  LEDoff();
+  laserOff();
+  solenoidOff();
 
   STEPPER_LINE_FAULT = 1;
 
@@ -315,9 +429,10 @@ void otherlinefault_ISR(){
   digitalWrite(51, LOW);
 
   // Shut down the board, starting with the brushed motor
-  digitalWrite(12, LOW);
-  digitalWrite(13, LOW);
-  digitalWrite(8, HIGH);
+  stopMotor();
+  LEDoff();
+  laserOff();
+  solenoidOff();
   digitalWrite(44, HIGH);
   digitalWrite(45, HIGH);
 
@@ -348,9 +463,10 @@ void stepperonefault_ISR(){
   digitalWrite(7, HIGH);
 
   // Shut down the rest of the board, starting with the brushed motor
-  digitalWrite(12, LOW);
-  digitalWrite(13, LOW);
-  digitalWrite(8, HIGH);
+  stopMotor();
+  LEDoff();
+  laserOff();
+  solenoidOff();
 
   STEPPER1_FAULT = 1;
 
@@ -376,9 +492,10 @@ void steppertwofault_ISR(){
   digitalWrite(7, HIGH);
 
   // Shut down the rest of the board, starting with the brushed motor
-  digitalWrite(12, LOW);
-  digitalWrite(13, LOW);
-  digitalWrite(8, HIGH);
+  stopMotor();
+  LEDoff();
+  laserOff();
+  solenoidOff();
 
   STEPPER2_FAULT = 1;
 
