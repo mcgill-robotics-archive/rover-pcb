@@ -1,5 +1,6 @@
-# science-dev
-Science board
+# science-dev-external-regulator
+An alternative design for the science board using the SD-50A-5 external regulator:
+https://www.meanwell.com/Upload/PDF/SD-50/SD-50-SPEC.PDF
 
 # Big Update (10/05/2021)
 The board has a linear regulator to power the Peltier cooler + CCD sensor assembly
