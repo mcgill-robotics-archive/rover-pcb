@@ -17,6 +17,10 @@
  * D48 - STEPPER2_STEP: Stepper #2 will advance one step on the rising edge of this pin.
  * D46 - STEPPER2_DIRECTION: Stepper #2 will change direction on the rising edge of this pin.
  * 
+ * ----[Limit Switches]----
+ * D34 - LIMIT_SWITCH_1
+ * D52 - LIMIT_SWITCH_2
+ * 
  * ----[DC Motor Control Lines]----
  * Will use this library: https://github.com/Infineon/DC-Motor-Control-BTN8982TA
  * 
@@ -37,8 +41,8 @@
  * ----[CCD Sensor]----
  * TODO: Figure out how the sensor works
  * A3 - OutputSignal_out: “out” as in “out to Arduino”.
- * D2 - phiM(CCD_Clock): Clock output to CCD sensor.
- * D10 - SH: “Shift Gate” (???)
+ * D6 - phiM(CCD_Clock): Clock output to CCD sensor.
+ * D20 - SH: “Shift Gate” (???)
  * D9 - ICG: “Integration Clear Gate” (???)
  * 
  * ----[COMMUNICATION LINES]----
@@ -68,11 +72,16 @@
  * Analog pins can do ADC by default.
  */
 
+#include <pwm_lib.h>
+#include <pwm_defs.h>
 #include <Wire.h>
 #include <SPI.h>
 #include <IfxMotorControlShield.h>
+using namespace arduino_due::pwm_lib;
 
 const int POWER_ON = 51;
+const int LIMIT_SWITCH_1 = 34;
+const int LIMIT_SWITCH_2 = 52;
 const int notFAULT1 = 38;
 const int notFAULT2 = 36;
 const int STEPPER1_notENABLE = 44;
@@ -86,12 +95,31 @@ const int IN_2 = 11;
 const int INH_1 = 12;
 const int INH_2 = 13;
 const int LASER1_CONTROL = 8;
-#define OutputSignal_out A3
-const int CCD_Clock = 2;
-const int SH = 10;
-const int ICG = 9;
+const int CCD_Clock = 16;
+const int SH = 20;
+const int ICG = 21;
 const int SOLENOID_ON = 22;
 const int LED_CONTROL = 32;
+
+// CCD sensor defines
+#define OutputSignal_out A3
+#define CCD_CLOCK_PERIOD 50 // hundredth of usecs (1e-8 secs)
+#define CCD_CLOCK_DUTY_CYCLE 5 // 100 msecs in hundredth of usecs (1e-8 secs)
+
+#define SH_PERIOD 100 // some integer multiple of the clock period
+#define SH_DUTY_CYCLE 50
+
+#define ICG_PERIOD 200
+#define ICG_DUTY_CYCLE 50
+
+// The CCD pin selections are dictated by the ATSAM3X8E hardware PWM capabilities and
+// the least awkward possible way to route the wires.
+// See https://github.com/antodom/pwm_lib/blob/master/pwm_defs.h
+// This library is used to access high frequency hardware PWM which isn't normally enabled on Due.
+
+pwm<pwm_pin::PWMH2_PA13> pwm_CCDclock; // pin D16
+pwm<pwm_pin::PWMH0_PB12> pwm_SH; // pin D20
+pwm<pwm_pin::PWMH1_PB13> pwm_ICG; // pin D21
 
 // Failure conditions, in case they need to be communicated to the central computer
 volatile int STEPPER1_FAULT = 0;
@@ -125,6 +153,8 @@ void setup() {
   pinMode(CCD_Clock, OUTPUT);
   pinMode(SH, OUTPUT);
   pinMode(ICG, OUTPUT);
+  pinMode(LIMIT_SWITCH_1, INPUT);
+  pinMode(LIMIT_SWITCH_2, INPUT);
 
   // TODO: Communications setup (UART, I2C, SPI)
   Serial.begin(UART_BAUD_RATE);
@@ -154,6 +184,13 @@ void setup() {
 
   // Turn on LED
   digitalWrite(LED_CONTROL, LOW);
+
+  // Start CCD sensor's clock
+  pwm_CCDclock.start(CCD_CLOCK_PERIOD, CCD_CLOCK_DUTY_CYCLE);
+  // Start SH
+  pwm_SH.start(SH_PERIOD, SH_DUTY_CYCLE);
+  // Start ICG
+  pwm_ICG.start(ICG_PERIOD, ICG_DUTY_CYCLE);
 
 
   // TODO: Tell the power board and the main computer that the science board is fully booted
