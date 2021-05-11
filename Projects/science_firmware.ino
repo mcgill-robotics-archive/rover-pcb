@@ -182,6 +182,30 @@ void setup() {
 
   // TODO: Tell the power board and the main computer that the science board is fully booted
   // and can receive commands
+
+  //Initializing and Setting PWM Frequency and Duty Cycle for CCD (Attempt based on Atmel SAM3X8E MCU in Arduino Due)
+  //http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-11057-32-bit-Cortex-M3-Microcontroller-SAM3X-SAM3A_Datasheet.pdf
+  //Datasheet page 973
+  
+  PMC -> PMC_PCER1 |= PMC_PCER1_PID36; //will need to change this based on the pin we're using (see page 38)
+
+  PWM -> PWM_DIS = PWM_DIS_CHID2; //disabling PWM channel 2
+
+  PMC -> PMC_PCER0 |= PMC_PCER0_PID11; //turning on power for the pins in port A
+
+  PIOA -> PIO_PDR |= PIO_PDR_P20; //initialize GPIO pin for the particular pin peripheral
+
+  PIOA -> PIO_ABSR |= PIO_ABSR_P20; //Set PWM Pin Peripheral (See page 974)
+
+  PWM -> PWM_CLK = PWM_CLK_PREA(0) | PWM_CLK_DIVA(1); //set PWM clock rate to 84Mhz/1
+
+  PWM-> PWM_CH_NUM[2].PWM_CMR = PWM_CMR_CPRE_CLKA; //Selecting Clock A for Channel 2
+
+  PWM -> PWM_CH_NUM[2].PWM_CPRD = 42; //Set PWM frequency (84MHz/1)/PWM_CPRD = 2 MHz; 
+
+  PWM -> PWM_CH_NUM[2].PWM_CDTY = 21; // Set PWM Duty cycle to 50% (CDTY/CPRD)*100%
+
+  PWM -> PWM_ENA = PWM_ENA_CHID2; //Enabling PWM channel 2
 }
 
 void loop() {
