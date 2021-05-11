@@ -26,11 +26,11 @@ Text Label 7700 5300 0    50   ~ 0
 phiM(CCD_Clock)
 Text Label 7700 5200 0    50   ~ 0
 OutputSignal_in
-Text Label 11850 5950 2    50   ~ 0
+Text Label 14450 5450 0    50   ~ 0
 phiM(CCD_Clock)
-Text Label 11850 5150 2    50   ~ 0
+Text Label 14450 5150 0    50   ~ 0
 SH
-Text Label 11850 5250 2    50   ~ 0
+Text Label 14450 5050 0    50   ~ 0
 ICG
 $Comp
 L Device:CP C7
@@ -2075,4 +2075,56 @@ Text Label 3300 9200 2    50   ~ 0
 5V
 Text Label 3300 9300 2    50   ~ 0
 5V
+$Comp
+L Connector_Generic:Conn_01x02 J9
+U 1 1 609ACEEE
+P 1500 8000
+F 0 "J9" H 1580 7992 50  0000 L CNN
+F 1 "Conn_01x02" H 1580 7901 50  0000 L CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical" H 1500 8000 50  0001 C CNN
+F 3 "~" H 1500 8000 50  0001 C CNN
+	1    1500 8000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J11
+U 1 1 609ADE84
+P 1500 8450
+F 0 "J11" H 1580 8442 50  0000 L CNN
+F 1 "Conn_01x02" H 1580 8351 50  0000 L CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical" H 1500 8450 50  0001 C CNN
+F 3 "~" H 1500 8450 50  0001 C CNN
+	1    1500 8450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0112
+U 1 1 609B515C
+P 1300 8550
+F 0 "#PWR0112" H 1300 8300 50  0001 C CNN
+F 1 "GND" H 1305 8377 50  0000 C CNN
+F 2 "" H 1300 8550 50  0001 C CNN
+F 3 "" H 1300 8550 50  0001 C CNN
+	1    1300 8550
+	1    0    0    -1  
+$EndComp
+Text Label 1300 8000 2    50   ~ 0
+LIMIT_SWITCH_1
+Text Label 1300 8450 2    50   ~ 0
+LIMIT_SWITCH_2
+$Comp
+L power:GND #PWR0113
+U 1 1 609B8045
+P 1300 8100
+F 0 "#PWR0113" H 1300 7850 50  0001 C CNN
+F 1 "GND" H 1305 7927 50  0000 C CNN
+F 2 "" H 1300 8100 50  0001 C CNN
+F 3 "" H 1300 8100 50  0001 C CNN
+	1    1300 8100
+	1    0    0    -1  
+$EndComp
+Text Label 11850 3550 2    50   ~ 0
+LIMIT_SWITCH_1
+Text Label 11850 1750 2    50   ~ 0
+LIMIT_SWITCH_2
 $EndSCHEMATC
