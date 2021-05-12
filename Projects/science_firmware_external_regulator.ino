@@ -70,6 +70,14 @@
  * 
  * ----[ADC]----
  * Analog pins can do ADC by default.
+ * 
+ * Toggle SH:
+ * REG_PIOB_SODR |= (0x01 << 12); // turn on
+ * REG_PIOB_CODR |= (0x01 << 12); // turn off
+ * 
+ * Toggle ICG:
+ * REG_PIOB_SODR |= (0x01 << 13); // turn on
+ * REG_PIOB_CODR |= (0x01 << 13); // turn off
  */
 
 #include <pwm_lib.h>
@@ -118,8 +126,6 @@ const int LED_CONTROL = 32;
 // This library is used to access high frequency hardware PWM which isn't normally enabled on Due.
 
 pwm<pwm_pin::PWMH2_PA13> pwm_CCDclock; // pin D16
-pwm<pwm_pin::PWMH0_PB12> pwm_SH; // pin D20
-pwm<pwm_pin::PWMH1_PB13> pwm_ICG; // pin D21
 
 // Failure conditions, in case they need to be communicated to the central computer
 volatile int STEPPER1_FAULT = 0;
@@ -187,10 +193,6 @@ void setup() {
 
   // Start CCD sensor's clock
   pwm_CCDclock.start(CCD_CLOCK_PERIOD, CCD_CLOCK_DUTY_CYCLE);
-  // Start SH
-  pwm_SH.start(SH_PERIOD, SH_DUTY_CYCLE);
-  // Start ICG
-  pwm_ICG.start(ICG_PERIOD, ICG_DUTY_CYCLE);
 
 
   // TODO: Tell the power board and the main computer that the science board is fully booted
@@ -380,6 +382,97 @@ void stepper2_changedirection(){
   STEPPER2_FORWARD = !STEPPER2_FORWARD;
 }
 
+//____[DELAY FUNCTIONS FOR CCD SIGNALS]_________________________________________________
+
+// See https://forum.arduino.cc/t/delay-minimum-100ns/462449/2
+// I changed the delayNanoseconds() function implemented by that answer to precalculate and
+// hardcode 500 and 1000 ns, to avoid the extra ~100 ns delay that could be introduced by
+// calculating n. The delayNanoseconds(ns) function is still here in case we need to use it.
+
+static inline void delay500ns() __attribute__((always_inline, unused));
+static inline void delay500ns(){
+    /*
+     * Based on Paul Stoffregen's implementation
+     * for Teensy 3.0 (http://www.pjrc.com/)
+     */
+     
+  uint32_t n = 14;
+  asm volatile(
+    "L_%=_delayNanos:"        "\n\t"
+    "subs   %0, #1"                    "\n\t"
+    "bne    L_%=_delayNanos" "\n"
+    : "+r" (n) :
+  );
+}
+
+static inline void delay1000ns() __attribute__((always_inline, unused));
+static inline void delay1000ns(){
+    /*
+     * Based on Paul Stoffregen's implementation
+     * for Teensy 3.0 (http://www.pjrc.com/)
+     */
+     
+  uint32_t n = 28;
+  asm volatile(
+    "L_%=_delayNanos:"        "\n\t"
+    "subs   %0, #1"                    "\n\t"
+    "bne    L_%=_delayNanos" "\n"
+    : "+r" (n) :
+  );
+}
+
+static inline void delayNanoseconds(uint32_t) __attribute__((always_inline, unused));
+static inline void delayNanoseconds(uint32_t nsec){
+    /*
+     * Based on Paul Stoffregen's implementation
+     * for Teensy 3.0 (http://www.pjrc.com/)
+     */
+    if (nsec == 0) return;
+    uint32_t n = (nsec * 1000) / 35714;
+    asm volatile(
+        "L_%=_delayNanos:"       "\n\t"
+        "subs   %0, #1"                 "\n\t"
+        "bne    L_%=_delayNanos" "\n"
+        : "+r" (n) :
+    );
+}
+
+//____[CCD SENSOR]______________________________________________________________________
+
+// Half done function just to write down thoughts and get something started.
+// We should try to find a way to probe the CCD clock signal as defined above.
+
+const int INTEGRATION_TIME = 2000; //in ms
+
+void CCDread(){
+  // On the rising edge of the CCD clock;
+  REG_PIOB_CODR |= (0x01 << 13); // ICG signal goes low
+  delay500ns();
+  REG_PIOB_SODR |= (0x01 << 12); // SH signal goes high
+  delay1000ns();
+  REG_PIOB_CODR |= (0x01 << 12); // SH signal goes low
+  delay1000ns();
+
+  // On the rising edge of the CCD clock;
+  REG_PIOB_SODR |= (0x01 << 13); // ICG signal goes high.
+  CCDSensorReadDataStream(); // Start listening to A3, keep listening for (INTEGRATION_TIME - 1500 ns)
+
+  // On the rising edge of the CCD clock;
+  REG_PIOB_CODR |= (0x01 << 13); // ICG signal goes low
+  delay500ns();
+  REG_PIOB_SODR |= (0x01 << 12); // SH signal goes high
+  delay1000ns();
+  REG_PIOB_CODR |= (0x01 << 12); // SH signal goes low
+  delay1000ns();
+  
+  
+}
+
+void CCDSensorReadDataStream(){
+  // This function should get the data from the A3 pin and put it somewhere, and should execute for tINT - 1500 ns (as specified
+  // in the TCD1304DG datasheet)
+}
+  
 // ___[INTERRUPTS]______________________________________________________________________
 
 void stepperonefault_ISR(){
