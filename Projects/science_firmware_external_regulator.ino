@@ -120,13 +120,6 @@ const int LED_CONTROL = 32;
 #define ICG_PERIOD 200
 #define ICG_DUTY_CYCLE 50
 
-// The CCD pin selections are dictated by the ATSAM3X8E hardware PWM capabilities and
-// the least awkward possible way to route the wires.
-// See https://github.com/antodom/pwm_lib/blob/master/pwm_defs.h
-// This library is used to access high frequency hardware PWM which isn't normally enabled on Due.
-
-pwm<pwm_pin::PWMH2_PA13> pwm_CCDclock; // pin D16
-
 // Failure conditions, in case they need to be communicated to the central computer
 volatile int STEPPER1_FAULT = 0;
 volatile int STEPPER2_FAULT = 0;
@@ -190,9 +183,6 @@ void setup() {
 
   // Turn on LED
   digitalWrite(LED_CONTROL, LOW);
-
-  // Start CCD sensor's clock
-  pwm_CCDclock.start(CCD_CLOCK_PERIOD, CCD_CLOCK_DUTY_CYCLE);
 
   //Trying to set up output signal through digital pin using clock signal
   //Enabling the peripheral, output function, and writing function for the timer pin we use
