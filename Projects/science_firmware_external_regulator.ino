@@ -196,29 +196,23 @@ void setup() {
 
   //Trying to set up output signal through digital pin using clock signal
   //Enabling the peripheral, output function, and writing function for the timer pin we use
-  PMC -> PMC_PCER0 |= PMC_PCER0_PID##; (turning on the peripheral corresponding to the particular pin)
-
-  PIO -> PIO_OER |= PIO_OER_P##; (enabling the specific output pin)
-
-  PIO -> PIO_OWER |= PIO_OWER_P##; (enabling writing functionality to the output pin)
-
+  
   //Setting up the timer counter channel and pin
 
-  PMC -> PMC_PCER0 |= PMC_PCER0_PID# // turning on power for timer counter channel (see page 859 for PIDs)
+  PMC -> PMC_PCER0 |= PMC_PCER0_PID27; // turning on power for timer counter channel (see page 859 for PIDs)
 
-  PIO -> PIO_PDR |= PIO_PDR_P## //turning of driving of pin by GPIO
+  PIOB -> PIO_PDR |= PIO_PDR_P25; //turning off driving of pin by GPIO
 
-  PIO -> PIO_ABSR |= PIO_PinIdentification_TIOA# //multiplexing peripheral functions for pin config (value of ID depends on pin used)
-  //See page 859 for TC and TIO I/O line connections 
+  PIOB -> PIO_ABSR |= PIO_ABSR_P25; //PB25 is driven by the TC, peripheral tybe B, page 858
 
-  TC# -> TC_CHANNEL[0].TC_CMR = TC_CMR_TCCLKS_TIMER_CLOCK1 | TC_CMR_WAVE | TC_CMR_WAVESEL_UP_RC | TC_CMR_ACPA_CLEAR | TC_CMR_ACPC_SET; 
+  TC0 -> TC_CHANNEL[0].TC_CMR = TC_CMR_TCCLKS_TIMER_CLOCK1 | TC_CMR_WAVE | TC_CMR_WAVESEL_UP_RC | TC_CMR_ACPA_CLEAR | TC_CMR_ACPC_SET; 
   //Clock select internal MCK/2 clock signal
 
-  TC# -> TC_CHANNEL[0].TC_RC = 21;  // Freqency = (Mck/2)/TC_RC Hz = 2 MHz
+  TC0 -> TC_CHANNEL[0].TC_RC = 21;  // Freqency = (Mck/2)/TC_RC Hz = 2 MHz
 
-  TC# -> TC_CHANNEL[0].TC_RA = 10.5 //Duty cycle = (TC_RA/TC_RC) * 100%
+  TC0 -> TC_CHANNEL[0].TC_RA = 10.5 //Duty cycle = (TC_RA/TC_RC) * 100%
 
-  TC# -> TC_CHANNEL[0].TC_CCR = TC_CCR_SWTRG | TC_CCR_CLKEN; // SOftware trigger TC counter and en
+  TC0 -> TC_CHANNEL[0].TC_CCR = TC_CCR_SWTRG | TC_CCR_CLKEN; // SOftware trigger TC counter and en
 
 
   // TODO: Tell the power board and the main computer that the science board is fully booted
