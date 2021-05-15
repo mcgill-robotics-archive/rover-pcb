@@ -318,7 +318,39 @@ bool STEPPER2_FORWARD = true;
 
 double STEPPER1_CURRENT_ANGLE = 45;
 double STEPPER2_CURRENT_ANGLE = 45;
-double ANGLE_PER_STEP = 1.8;
+double ANGLE_PER_STEP = 0.1125;
+
+void stepper1_goto_angle(double angle){
+  int n = round(angle/ANGLE_PER_STEP);
+  
+  if(n == 0) return;
+  if(n < 0 && STEPPER1_FORWARD){
+    stepper1_changedirection();
+  }
+  if(n > 0 && !STEPPER1_FORWARD){
+    stepper1_changedirection();
+  }
+  
+  for(int i = 0; i < n; i++){
+    stepper1_step();
+  }
+}
+
+void stepper2_goto_angle(double angle){
+  int n = round(angle/ANGLE_PER_STEP);
+  
+  if(n == 0) return;
+  if(n < 0 && STEPPER2_FORWARD){
+    stepper2_changedirection();
+  }
+  if(n > 0 && !STEPPER2_FORWARD){
+    stepper2_changedirection();
+  }
+  
+  for(int i = 0; i < n; i++){
+    stepper2_step();
+  }
+}
 
 void stepper1_step(){
   
