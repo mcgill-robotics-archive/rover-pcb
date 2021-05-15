@@ -105,6 +105,20 @@ const int PELTIER_ON = 14;
 #define ICG_PERIOD 200
 #define ICG_DUTY_CYCLE 50
 
+#define MCLK 0x10
+#define ICG 0x01
+#define SH  0x02
+#define PIXELS 3691
+
+
+//16-bit buffer for pixels
+uint16_t pixelBuffer[PIXELS];
+
+char cmdBuffer[16];
+int exposureTime = 20; 
+int cmdIndex; 
+int cmdR = 0;
+
 // Failure conditions, in case they need to be communicated to the central computer
 volatile int STEPPER1_FAULT = 0;
 volatile int STEPPER2_FAULT = 0;
@@ -171,7 +185,25 @@ void setup() {
   // Turn on LED
   digitalWrite(LED_CONTROL, LOW);
 
+  //Initialize the clocks
+  DDRD |= (SH | ICG); //Set ICG and SH lines to outputs for port D
+  DDRE |= (MCLK); //Set Master Clock line to output for port E
+  PORTD |= ICG; set ICG line high
 
+  //Enable serial port
+  Serial.begin(115200); 
+
+  //TODO: Set up timer to generate frquency on MCLK pin D2
+  //No clock prescaling, clear timer on compare mode
+  TCCR2A = (0 << COM2A1) | (1 << COM2A0) | (1 << WGM21) | (0 << WGM20);
+  TCCR2B = (0 << WGM22) |(1 << CS20); //no prescaling on the clock
+  OCR2A = ##; //used to calculate frequency of output through MCLK pin (don't know what fclk is)
+  TCNT2 = 0; //Reset timer2
+  
+  //TODO: Set ADC clock rate
+
+
+  
   // TODO: Tell the power board and the main computer that the science board is fully booted
   // and can receive commands
 }
@@ -226,6 +258,25 @@ void stopMotor(){
   speedvalue = 0;
   MOTOR_ON = false;
 }
+
+//___Reading Data from CCD_____________________________________________
+
+void readCCD(){
+  int x; 
+  uint16_t output;
+
+  //toggling ICG and SH lines
+  PORTD &= ~ICG; //set ICG line low
+  _delay_loop_1(12); 
+  PORTD |= SH //turn SH line high after delay
+  delayMicroseconds(5); 
+  PORTD &= ~SH //turn SH line low
+  delayMicroseconds(15); 
+  PORTD |= ICG //turn on ICG line
+  delayMicroseconds(1); 
+}
+
+
 
 // ___[LED]____________________________________________________________
 
