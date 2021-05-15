@@ -1,0 +1,35 @@
+Removed Pin From Net: NetName=IN-1 Pin=D3-2
+Removed Pin From Net: NetName=RELAY_A Pin=D4-2
+Change Component Footprint: Designator=D3 Old Footprint=SMC New Footprint=SOD123_DIO
+Change Component Footprint: Designator=D4 Old Footprint=SMC New Footprint=SOD123_DIO
+Change Component Comment : Designator=D3 Old Comment=Diode New Comment=1N4148W-7-F
+Change Component Comment : Designator=D4 Old Comment=Diode New Comment=1N4148W-7-F
+Change component parameters: Designator = "D3"; Footprint = "SOD123_DIO"; UniqueID = "\OVHHSOCO"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Built_By"; Value = "EMA_Anthony"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Copyright"; Value = "Copyright (C) 2016 Accelerated Designs. All rights reserved"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Part_Number"; Value = "1N4148W-7-F"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RefDes"; Value = "RefDes"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "SourceLibrary"; Value = "Diodes_Inc_2018-12-15"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Type"; Value = "DEV"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Vendor"; Value = "Diodes Inc"; VariantName = "[No Variations]"
+Change component parameters: Designator = "D4"; Footprint = "SOD123_DIO"; UniqueID = "\GHWUTTSS"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Built_By"; Value = "EMA_Anthony"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Copyright"; Value = "Copyright (C) 2016 Accelerated Designs. All rights reserved"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Part_Number"; Value = "1N4148W-7-F"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RefDes"; Value = "RefDes"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "SourceLibrary"; Value = "Diodes_Inc_2018-12-15"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Type"; Value = "DEV"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Vendor"; Value = "Diodes Inc"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=IN-1 Pin=D3-1
+Added Pin To Net: NetName=RELAY_A Pin=D4-1
+Added Pin To Net: NetName=NetD3_2 Pin=D3-2
+Added Pin To Net: NetName=NetD3_2 Pin=KILL_SWITCH-1
+Added Pin To Net: NetName=NetD3_2 Pin=Relay A-4
+Added Net: Name=NetD3_2
+Added Pin To Net: NetName=NetD4_2 Pin=D4-2
+Added Pin To Net: NetName=NetD4_2 Pin=Q1-3
+Added Pin To Net: NetName=NetD4_2 Pin=Relay B-4
+Added Net: Name=NetD4_2
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component F1 550mA

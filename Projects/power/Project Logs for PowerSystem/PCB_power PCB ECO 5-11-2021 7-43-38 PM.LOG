@@ -1,0 +1,17 @@
+Change Component Description : Designator=F5 Old Description=0603 SMT Fuse New Description=0603 SMT Fuse | Fast Acting | 500mA
+Change Component Description : Designator=F4 Old Description=Surface mount "chip" New Description=Surface mount "chip" | Ceramic Tube | 1206 case size | High Surge Withstand | 2A
+Change Component Description : Designator=F6 Old Description=Yüzey montajı çip New Description=Yüzey montajı çip | Seramik Boru | 1206 kasa boyutu | Yüksek Dalgalanma Dayanımı | 50A
+Change Component Description : Designator=F7 Old Description=Yüzey montajı çip New Description=Yüzey montajı çip | Seramik Boru | 1206 kasa boyutu | Yüksek Dalgalanma Dayanımı | 50A
+Added Component: Designator=D4(SOD123_DIO)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Built_By"; Value = "EMA_Anthony"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Copyright"; Value = "Copyright (C) 2016 Accelerated Designs. All rights reserved"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "1N4148W-7-F"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RefDes"; Value = "RefDes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SourceLibrary"; Value = "Diodes_Inc_2018-12-15"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "DEV"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Diodes Inc"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=RELAY_A Pin=D4-1
+Added Pin To Net: NetName=NetD4_2 Pin=D4-2
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component D4 1N4148W-7-F
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component F1 550mA
