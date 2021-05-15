@@ -1,4 +1,4 @@
-16392199325415450
+16393875852836450
 Arduino
 Arduino_101_Shield
 https://store.arduino.cc/genuino-101
@@ -57679,6 +57679,13 @@ Toshiba 11-7A9 DIL DIP PDIP 2.54mm 7.62mm 300mil
 0
 5
 5
+Package_DIP
+VO14642AT
+6-lead surface-mounted (SMD) DIP package, row spacing 7.62 mm (300 mils)
+SMD DIP DIL PDIP SMDIP 2.54mm 7.62mm 300mil
+0
+6
+6
 Package_DIP
 Vishay_HVM-DIP-3_W7.62mm
 3-lead though-hole mounted high-volatge DIP package (based on standard DIP-4), row spacing 7.62 mm (300 mils), see https://www.vishay.com/docs/91361/hexdip.pdf
