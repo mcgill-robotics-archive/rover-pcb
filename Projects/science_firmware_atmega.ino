@@ -123,7 +123,7 @@ int cmdR = 0;
 volatile int STEPPER1_FAULT = 0;
 volatile int STEPPER2_FAULT = 0;
 
-const int UART_BAUD_RATE = 9600;
+const int UART_BAUD_RATE = 115200;
 
 // Brushless DC motor constants
 bool MOTOR_INIT_FAILED = false;
@@ -188,14 +188,11 @@ void setup() {
   DDRE |= (MCLK); //Set Master Clock line to output for port E
   PORTD |= ICG; set ICG line high
 
-  //Enable serial port
-  Serial.begin(115200); 
-
   //TODO: Set up timer to generate frquency on MCLK pin D2
   //No clock prescaling, clear timer on compare mode
   TCCR2A = (0 << COM2A1) | (1 << COM2A0) | (1 << WGM21) | (0 << WGM20);
   TCCR2B = (0 << WGM22) |(1 << CS20); //no prescaling on the clock
-  OCR2A = ##; //used to calculate frequency of output through MCLK pin (don't know what fclk is)
+  OCR2A = 3; //used to calculate frequency of output through MCLK pin (don't know what fclk is)
   TCNT2 = 0; //Reset timer2
   
   //TODO: Set ADC clock rate
@@ -259,20 +256,7 @@ void stopMotor(){
 
 //___Reading Data from CCD_____________________________________________
 
-void readCCD(){
-  int x; 
-  uint16_t output;
 
-  //toggling ICG and SH lines
-  PORTD &= ~ICG; //set ICG line low
-  _delay_loop_1(12); 
-  PORTD |= SH //turn SH line high after delay
-  delayMicroseconds(5); 
-  PORTD &= ~SH //turn SH line low
-  delayMicroseconds(15); 
-  PORTD |= ICG //turn on ICG line
-  delayMicroseconds(1); 
-}
 
 
 
@@ -440,88 +424,53 @@ void stepper2_changedirection(){
   STEPPER2_FORWARD = !STEPPER2_FORWARD;
 }
 
-//____[DELAY FUNCTIONS FOR CCD SIGNALS]_________________________________________________
-
-// See https://forum.arduino.cc/t/delay-minimum-100ns/462449/2
-// I changed the delayNanoseconds() function implemented by that answer to precalculate and
-// hardcode 500 and 1000 ns, to avoid the extra ~100 ns delay that could be introduced by
-// calculating n. The delayNanoseconds(ns) function is still here in case we need to use it.
-
-static inline void delay500ns() __attribute__((always_inline, unused));
-static inline void delay500ns(){
-    /*
-     * Based on Paul Stoffregen's implementation
-     * for Teensy 3.0 (http://www.pjrc.com/)
-     */
-     
-  uint32_t n = 14;
-  asm volatile(
-    "L_%=_delayNanos:"        "\n\t"
-    "subs   %0, #1"                    "\n\t"
-    "bne    L_%=_delayNanos" "\n"
-    : "+r" (n) :
-  );
-}
-
-static inline void delay1000ns() __attribute__((always_inline, unused));
-static inline void delay1000ns(){
-    /*
-     * Based on Paul Stoffregen's implementation
-     * for Teensy 3.0 (http://www.pjrc.com/)
-     */
-     
-  uint32_t n = 28;
-  asm volatile(
-    "L_%=_delayNanos:"        "\n\t"
-    "subs   %0, #1"                    "\n\t"
-    "bne    L_%=_delayNanos" "\n"
-    : "+r" (n) :
-  );
-}
-
-static inline void delayNanoseconds(uint32_t) __attribute__((always_inline, unused));
-static inline void delayNanoseconds(uint32_t nsec){
-    /*
-     * Based on Paul Stoffregen's implementation
-     * for Teensy 3.0 (http://www.pjrc.com/)
-     */
-    if (nsec == 0) return;
-    uint32_t n = (nsec * 1000) / 35714;
-    asm volatile(
-        "L_%=_delayNanos:"       "\n\t"
-        "subs   %0, #1"                 "\n\t"
-        "bne    L_%=_delayNanos" "\n"
-        : "+r" (n) :
-    );
-}
-
 //____[CCD SENSOR]______________________________________________________________________
 
 // Half done function just to write down thoughts and get something started.
 // We should try to find a way to probe the CCD clock signal as defined above.
 
+void readCCD(){
+  int x; 
+  uint16_t output;
+
+  //toggling ICG and SH lines
+  PORTD &= ~ICG; //set ICG line low
+  _delay_loop_1(8); // delay 500ns on ATMega 2560
+  PORTD |= SH //turn SH line high after delay
+  _delay_loop_1(16); // delay 1000 ns on ATMega 2560
+  PORTD &= ~SH //turn SH line low
+  _delay_loop_1(16); // delay 1000 ns on ATMega 2560
+  PORTD |= ICG //turn on ICG line
+  delayMicroseconds(1); 
+}
+
 const int INTEGRATION_TIME = 2000; //in ms
 
 void CCDread(){
-  // On the rising edge of the CCD clock;
-  // ICG signal goes low
-  delay500ns();
-  // SH signal goes high
-  delay1000ns();
-  // SH signal goes low
-  delay1000ns();
+  int x; 
+  uint16_t output;
+  
+  PORTD &= ~ICG;      // set ICG line low
+  PORTD |= SH         // turn SH line high
+  TCNT2 = 0;          // On the rising edge of the CCD clock;
+  
+  _delay_loop_1(8);   // delay 500ns on ATMega 2560
+  PORTD |= SH         // turn SH line high after delay
+  _delay_loop_1(16);  // delay 1000 ns on ATMega 2560
+  PORTD &= ~SH        // turn SH line low
+  _delay_loop_1(16);  // delay 1000 ns on ATMega 2560
+
+  TCNT2 = 0;                  // On the rising edge of the CCD clock;
+  PORTD |= ICG                // ICG signal goes high.
+  CCDSensorReadDataStream();  // Start listening to A3, keep listening for (INTEGRATION_TIME - 1500 ns)
 
   // On the rising edge of the CCD clock;
-  // ICG signal goes high.
-  CCDSensorReadDataStream(); // Start listening to A3, keep listening for (INTEGRATION_TIME - 1500 ns)
-
-  // On the rising edge of the CCD clock;
-  // ICG signal goes low
-  delay500ns();
-  // SH signal goes high
-  delay1000ns();
-  // SH signal goes low
-  delay1000ns();
+  PORTD &= ~ICG;      //set ICG line low
+  _delay_loop_1(8);   // delay 500ns on ATMega 2560
+  PORTD |= SH         //turn SH line high after delay
+  _delay_loop_1(16);  // delay 1000 ns on ATMega 2560
+  PORTD &= ~SH        //turn SH line low
+  _delay_loop_1(16);  // delay 1000 ns on ATMega 2560
   
   
 }
