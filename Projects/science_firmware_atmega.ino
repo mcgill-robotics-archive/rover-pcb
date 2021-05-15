@@ -109,10 +109,12 @@ const int PELTIER_ON = 14;
 #define ICG 0x01
 #define SH  0x02
 #define PIXELS 3691
+#define MIN_SIGNAL 10
 
 
 //16-bit buffer for pixels
 uint16_t pixelBuffer[PIXELS];
+uint16_t avg = 0;
 
 char cmdBuffer[16];
 int exposureTime = 20; 
@@ -195,9 +197,9 @@ void setup() {
   OCR2A = 3; //used to calculate frequency of output through MCLK pin (don't know what fclk is)
   TCNT2 = 0; //Reset timer2
   
-  //TODO: Set ADC clock rate
-
-
+  //Set ADC clock rate to sysclk/32
+  ADCSRA &= ~((1 << ADPS2) | (1 << ADPS1) | (1 << ADPS0));
+  ADCSRA |= (1 << ADPS2) | (1 << ADPS0);
   
   // TODO: Tell the power board and the main computer that the science board is fully booted
   // and can receive commands
@@ -429,40 +431,24 @@ void stepper2_changedirection(){
 // Half done function just to write down thoughts and get something started.
 // We should try to find a way to probe the CCD clock signal as defined above.
 
-void readCCD(){
-  int x; 
-  uint16_t output;
-
-  //toggling ICG and SH lines
-  PORTD &= ~ICG; //set ICG line low
-  _delay_loop_1(8); // delay 500ns on ATMega 2560
-  PORTD |= SH //turn SH line high after delay
-  _delay_loop_1(16); // delay 1000 ns on ATMega 2560
-  PORTD &= ~SH //turn SH line low
-  _delay_loop_1(16); // delay 1000 ns on ATMega 2560
-  PORTD |= ICG //turn on ICG line
-  delayMicroseconds(1); 
-}
-
-const int INTEGRATION_TIME = 2000; //in ms
-
 void CCDread(){
-  int x; 
-  uint16_t output;
+//   int x; 
+//   uint16_t result;
   
-  PORTD &= ~ICG;      // set ICG line low
-  PORTD |= SH         // turn SH line high
-  TCNT2 = 0;          // On the rising edge of the CCD clock;
   
-  _delay_loop_1(8);   // delay 500ns on ATMega 2560
-  PORTD |= SH         // turn SH line high after delay
-  _delay_loop_1(16);  // delay 1000 ns on ATMega 2560
-  PORTD &= ~SH        // turn SH line low
-  _delay_loop_1(16);  // delay 1000 ns on ATMega 2560
+//   PORTD &= ~ICG;      // set ICG line low
+//   PORTD |= SH         // turn SH line high
+//   TCNT2 = 0;          // On the rising edge of the CCD clock;
+  
+//   _delay_loop_1(8);   // delay 500ns on ATMega 2560
+//   PORTD |= SH         // turn SH line high after delay
+//   _delay_loop_1(16);  // delay 1000 ns on ATMega 2560
+//   PORTD &= ~SH        // turn SH line low
+//   _delay_loop_1(16);  // delay 1000 ns on ATMega 2560
 
-  TCNT2 = 0;                  // On the rising edge of the CCD clock;
-  PORTD |= ICG                // ICG signal goes high.
-  CCDSensorReadDataStream();  // Start listening to A3, keep listening for (INTEGRATION_TIME - 1500 ns)
+//   TCNT2 = 0;                  // On the rising edge of the CCD clock;
+//   PORTD |= ICG                // ICG signal goes high.
+//   CCDSensorReadDataStream();  // Start listening to A3, keep listening for (INTEGRATION_TIME - 1500 ns)
 
   // On the rising edge of the CCD clock;
   PORTD &= ~ICG;      //set ICG line low
@@ -471,13 +457,34 @@ void CCDread(){
   _delay_loop_1(16);  // delay 1000 ns on ATMega 2560
   PORTD &= ~SH        //turn SH line low
   _delay_loop_1(16);  // delay 1000 ns on ATMega 2560
+  PORTD |= ICG;       //set ICG line high
   
-  
+  for (x = 0; x < PIXELS; x++) {
+        PORTD |= SH;
+        if (x == 0) {
+            result = (uint16_t)(1023 - analogRead(A3));
+            if (result > MIN_SIGNAL) {
+                avg = result - MIN_SIGNAL;
+            } else {
+                avg = result;
+            }
+        } else {
+            result = (uint16_t)(1023 - analogRead(A3));
+        }
+        if (result < avg) {
+            result = 0;
+        } else {
+            result -= avg;
+        }
+        pixelBuffer[x] = result;
+        delayMicroseconds(21);
+    }
+    PORTD &= ~SH; 
 }
 
-void CCDSensorReadDataStream(){
-  // This function should get the data from the A3 pin and put it somewhere, and should execute for tINT - 1500 ns (as specified
-  // in the TCD1304DG datasheet)
+//TODO: Write Method to Send Data via USB
+void sendData(){
+  
 }
   
 // ___[INTERRUPTS]______________________________________________________________________
