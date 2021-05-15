@@ -32,10 +32,10 @@
  * A1 - AD_2
  * 
  * ----[Laser]----
- * D8 - LASER1_CONTROL: Laser is on when this pin is low
+ * D8 - LASER1_CONTROL: Laser is on when this pin is high
  * 
  * ----[LED's]----
- * D4 - LED_CONTROL: LED's are on when this pin is low
+ * D4 - LED_CONTROL: LED's are on when this pin is high
  * 
  * ----[Solenoid]----
  * D22 - SOLENOID_ON: Solenoid is on when this pin is high
@@ -161,10 +161,8 @@ void setup() {
   Serial1.begin(UART_BAUD_RATE);
 
   // Initial conditions for active low pins
-  digitalWrite(LASER1_CONTROL, HIGH);
   digitalWrite(STEPPER1_notENABLE, HIGH);
   digitalWrite(STEPPER2_notENABLE, HIGH);
-  digitalWrite(LED_CONTROL, HIGH);
 
   // Update(18/03/2021): We now have an onboard relay
   digitalWrite(POWER_ON, HIGH);
@@ -183,7 +181,7 @@ void setup() {
   }
 
   // Turn on LED
-  digitalWrite(LED_CONTROL, LOW);
+  digitalWrite(LED_CONTROL, HIGH);
 
   //Initialize the clocks
   DDRD |= (SH | ICG); //Set ICG and SH lines to outputs for port D
@@ -281,11 +279,11 @@ void readCCD(){
 // ___[LED]____________________________________________________________
 
 void LEDon(){
-  digitalWrite(LED_CONTROL, LOW);
+  digitalWrite(LED_CONTROL, HIGH);
 }
 
 void LEDoff(){
-  digitalWrite(LED_CONTROL, HIGH);
+  digitalWrite(LED_CONTROL, LOW);
 }
 
 // ___[SOLENOID]_______________________________________________________
@@ -301,11 +299,11 @@ void solenoidOff(){
 // ___[LASER]__________________________________________________________
 
 void laserOn(){
-  digitalWrite(LASER1_CONTROL, LOW);
+  digitalWrite(LASER1_CONTROL, HIGH);
 }
 
 void laserOff(){
-  digitalWrite(LASER1_CONTROL, HIGH);
+  digitalWrite(LASER1_CONTROL, LOW);
 }
 
 // ___[STEPPERS]_______________________________________________________
