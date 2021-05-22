@@ -1,0 +1,51 @@
+Removed Pin From Net: NetName=GND Pin=ANTENNA-1
+Removed Pin From Net: NetName=GND Pin=CPU-1
+Removed Pin From Net: NetName=CPU Connector Pin=CPU-2
+Removed Pin From Net: NetName=NetAUTONOMY - 25 A_2 Pin=F1-1
+Removed Pin From Net: NetName=NetAUTONOMY - 25 A_2 Pin=F1-2
+Removed Pin From Net: NetName=RELAY_B Pin=F1-3
+Removed Pin From Net: NetName=RELAY_B Pin=F1-4
+Removed Pin From Net: NetName=GND Pin=Science-1
+Removed Pin From Net: NetName=Science Connector Pin=Science-2
+Removed Member From Class: ClassName=TM4C123GH6PMI Member=ANTENNA
+Removed Member From Class: ClassName=TM4C123GH6PMI Member=CPU
+Removed Member From Class: ClassName=TM4C123GH6PMI Member=Science
+Change Component Designator: OldDesignator=J? NewDesignator=F1
+Added Component: Designator=J2(768290002)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://www.molex.com/pdm_docs/sd/768290002_sd.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "14.8mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Molex"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "76829-0002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser2 Part Number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser2 Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=J3(768290002)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://www.molex.com/pdm_docs/sd/768290002_sd.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "14.8mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Molex"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "76829-0002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser2 Part Number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser2 Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=J4(768290002)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://www.molex.com/pdm_docs/sd/768290002_sd.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "14.8mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Molex"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "76829-0002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser2 Part Number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser2 Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetAUTONOMY - 25 A_2 Pin=F1-1
+Added Pin To Net: NetName=NetAUTONOMY - 25 A_2 Pin=F1-2
+Added Pin To Net: NetName=RELAY_B Pin=F1-3
+Added Pin To Net: NetName=RELAY_B Pin=F1-4
+Added Pin To Net: NetName=CPU Connector Pin=J2-1
+Added Pin To Net: NetName=GND Pin=J2-2
+Added Pin To Net: NetName=Science Connector Pin=J3-1
+Added Pin To Net: NetName=GND Pin=J4-2
+Added Pin To Net: NetName=NetF4_2 Pin=F4-2
+Added Pin To Net: NetName=NetF4_2 Pin=J4-1
+Added Net: Name=NetF4_2
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component J2 76829-0002
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component J3 76829-0002
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component J4 76829-0002

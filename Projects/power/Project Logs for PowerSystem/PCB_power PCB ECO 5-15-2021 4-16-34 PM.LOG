@@ -1,0 +1,22 @@
+Removed Pin From Net: NetName=GND Pin=ARM-1
+Removed Pin From Net: NetName=GND Pin=J1-2
+Removed Pin From Net: NetName=NetF6_2 Pin=J1-3
+Removed Member From Class: ClassName=TM4C123GH6PMI Member=ARM
+Added Component: Designator=J7(428202224)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://componentsearchengine.com/Datasheets/1/42820-2224.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "14.1mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Molex"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "42820-2224"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser2 Part Number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser2 Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetF6_2 Pin=J1-2
+Added Pin To Net: NetName=GND Pin=J1-3
+Added Pin To Net: NetName=GND Pin=J7-1
+Added Pin To Net: NetName=GND Pin=J7-3
+Added Pin To Net: NetName=NetF7_2 Pin=F7-2
+Added Pin To Net: NetName=NetF7_2 Pin=J7-2
+Added Pin To Net: NetName=NetF7_2 Pin=J7-4
+Added Net: Name=NetF7_2
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component F1 550mA
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component J7 42820-2224

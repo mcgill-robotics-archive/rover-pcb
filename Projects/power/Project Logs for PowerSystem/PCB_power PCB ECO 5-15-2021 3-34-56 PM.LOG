@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=GND Pin=AUTONOMY - 25 A-1
+Removed Pin From Net: NetName=RELAY_B Pin=F1-3
+Removed Pin From Net: NetName=RELAY_B Pin=F1-4
+Removed Member From Class: ClassName=TM4C123GH6PMI Member=AUTONOMY - 25 A

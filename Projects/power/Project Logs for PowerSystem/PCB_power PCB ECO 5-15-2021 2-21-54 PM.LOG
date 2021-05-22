@@ -1,0 +1,18 @@
+Removed Pin From Net: NetName=GND Pin=From Regulator-1
+Removed Pin From Net: NetName=12V Pin=From Regulator-2
+Removed Member From Class: ClassName=TM4C123GH6PMI Member=From Regulator
+Added Component: Designator=J5(768290004)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://www.molex.com/pdm_docs/sd/768290004_sd.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "14.8mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Molex"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "76829-0004"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser2 Part Number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser2 Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=12V Pin=J5-1
+Added Pin To Net: NetName=GND Pin=J5-2
+Added Pin To Net: NetName=12V Pin=J5-3
+Added Pin To Net: NetName=GND Pin=J5-4
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component F1 3557-2
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component F4 3557-2
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component J5 76829-0004

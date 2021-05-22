@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=RELAY_B Pin=F4-1
+Added Pin To Net: NetName=12V Pin=F4-1
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component ANTENNA XT60-M
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component F1 550mA

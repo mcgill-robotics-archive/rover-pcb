@@ -1,0 +1,19 @@
+Removed Pin From Net: NetName=RELAY_B Pin=F1-1
+Change Component Footprint: Designator=F1 Old Footprint=FUSC3215X85N New Footprint=35552
+Change Component Comment : Designator=F1 Old Comment=C1H-25 New Comment=3555-2
+Change Component Designator: OldDesignator=AUTONOMY NewDesignator=AUTONOMY - 25 A
+Change component parameters: Designator = "F1"; Footprint = "35552"; UniqueID = "\LSKCFRNL"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Datasheet Link"; Value = "https://componentsearchengine.com//3555-2.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Height"; Value = "11.6mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Name"; Value = "Keystone Electronics"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Part_Number"; Value = "3555-2"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser2 Part Number"; Value = "534-3555-2"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser2 Price/Stock"; Value = "https://www.mouser.com/Search/Refine.aspx?Keyword=534-3555-2"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=RELAY_B Pin=F1-3
+Added Pin To Net: NetName=RELAY_B Pin=F1-4
+Added Pin To Net: NetName=NetAUTONOMY - 25 A_2 Pin=AUTONOMY - 25 A-2
+Added Pin To Net: NetName=NetAUTONOMY - 25 A_2 Pin=F1-1
+Added Pin To Net: NetName=NetAUTONOMY - 25 A_2 Pin=F1-2
+Added Net: Name=NetAUTONOMY - 25 A_2
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component F1 3555-2

@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=GND Pin=J6-2
+Removed Pin From Net: NetName=IN-2 Pin=J6-3
+Added Pin To Net: NetName=IN-2 Pin=J6-2
+Added Pin To Net: NetName=GND Pin=J6-3
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component F1 3557-2
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component F4 3557-2

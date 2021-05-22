@@ -1,0 +1,16 @@
+Removed Pin From Net: NetName=NetD3_2 Pin=KILL_SWITCH-1
+Removed Pin From Net: NetName=GND Pin=KILL_SWITCH-2
+Removed Member From Class: ClassName=TM4C123GH6PMI Member=KILL_SWITCH
+Added Component: Designator=TO KILL SWITCH(CONN_B2B-XH-A(LF)(SN)_JST)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Built_By"; Value = "EMA_Cory"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Copyright"; Value = "Copyright (C) 2018 Accelerated Designs. All rights reserved"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "B2B-XH-A(LF)(SN)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RefDes"; Value = "RefDes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SourceLibrary"; Value = "JST_2019-12-02"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "DEV"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "JST"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetD3_2 Pin=TO KILL SWITCH-1
+Added Pin To Net: NetName=GND Pin=TO KILL SWITCH-2
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component F1 550mA
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component TO KILL SWITCH B2B-XH-A(LF)(SN)

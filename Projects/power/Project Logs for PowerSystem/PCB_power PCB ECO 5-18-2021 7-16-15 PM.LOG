@@ -1,0 +1,12 @@
+Change Component Footprint: Designator=F6 Old Footprint=FUSC3215X83N New Footprint=0606050UXTHP
+Change Component Comment : Designator=F6 Old Comment=0685P9500-01 New Comment=0606050.UXTHP
+Change component parameters: Designator = "F6"; Footprint = "0606050UXTHP"; UniqueID = "\IIONGLSS"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Datasheet Link"; Value = "https://componentsearchengine.com//0606050.UXTHP.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Height"; Value = "12.25mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Name"; Value = "LITTELFUSE"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Part_Number"; Value = "0606050.UXTHP"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser2 Part Number"; Value = "576-0606050.UXTHP"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser2 Price/Stock"; Value = "https://www.mouser.com/Search/Refine.aspx?Keyword=576-0606050.UXTHP"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetF6_2 Pin=F6-3
+Added Pin To Net: NetName=RELAY_B Pin=F6-4
