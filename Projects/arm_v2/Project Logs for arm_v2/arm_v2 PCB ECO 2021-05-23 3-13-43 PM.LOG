@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=nFLT_A Pin=U2-30
+Removed Pin From Net: NetName=nSLEEP_B Pin=U2-31
+Added Pin To Net: NetName=nSLEEP_B Pin=U2-30
+Added Pin To Net: NetName=nFLT_A Pin=U2-31

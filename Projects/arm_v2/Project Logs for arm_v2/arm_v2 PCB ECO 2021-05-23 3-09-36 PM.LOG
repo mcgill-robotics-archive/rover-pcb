@@ -1,0 +1,18 @@
+Removed Pin From Net: NetName=DATA_A Pin=U2-1
+Removed Pin From Net: NetName=DATA_B Pin=U2-10
+Removed Pin From Net: NetName=CLK_A Pin=U2-19
+Removed Pin From Net: NetName=nFLT_A Pin=U2-21
+Removed Pin From Net: NetName=nSLEEP_B Pin=U2-22
+Removed Pin From Net: NetName=CLK_B Pin=U2-61
+Added Pin To Net: NetName=DATA_A Pin=U2-21
+Added Pin To Net: NetName=CLK_A Pin=U2-22
+Added Pin To Net: NetName=DATA_B Pin=U2-28
+Added Pin To Net: NetName=CLK_B Pin=U2-29
+Added Pin To Net: NetName=nFLT_A Pin=U2-30
+Added Pin To Net: NetName=nSLEEP_B Pin=U2-31
+Added Member To Class: ClassName=arm_v2 Member=Component R27 150
+Added Member To Class: ClassName=arm_v2 Member=Component R28 150
+Added Member To Class: ClassName=arm_v2 Member=Component R29 150
+Added Member To Class: ClassName=arm_v2 Member=Component R30 150
+Added Member To Class: ClassName=arm_v2 Member=Component R31 150
+Added Member To Class: ClassName=arm_v2 Member=Component R32 150
