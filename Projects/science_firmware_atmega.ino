@@ -1,4 +1,4 @@
-/*
+/* OUTDATED - go to https://github.com/mcgill-robotics/rover-embedded/tree/EP56_science_system_firmware
  * ----------[PINOUT]----------
  * (Also see documentation: 
  * https://github.com/mcgill-robotics/rover-pcb/blob/science-dev/Projects/science.pdf)
