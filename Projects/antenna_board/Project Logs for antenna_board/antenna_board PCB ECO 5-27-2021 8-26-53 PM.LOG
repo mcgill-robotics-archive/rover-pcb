@@ -1,0 +1,29 @@
+Added Component: Designator=J?(670688010)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://www.molex.com/pdm_docs/sd/670688010_sd.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "11.25mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Molex"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "67068-8010"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser2 Part Number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser2 Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=U1(XB324Z8ST)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://componentsearchengine.com//XB3-24Z8ST.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "5mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Digi International"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "XB3-24Z8ST"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser2 Part Number"; Value = "888-XB3-24Z8ST"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser2 Price/Stock"; Value = "https://www.mouser.com/Search/Refine.aspx?Keyword=888-XB3-24Z8ST"; VariantName = "[No Variations]"
+Added Net: Name=+3.3V
+Added Net: Name=+5V
+Added Net: Name=DM
+Added Net: Name=DP
+Added Net: Name=GND
+Added Net: Name=NetR?_1
+Added Net: Name=NetR?_2
+Added Net: Name=USB_RX
+Added Net: Name=USB_TX
+Added Net: Name=USB RX LED
+Added Net: Name=USB TX LED
+Added Net: Name=VBUS
+Added Class: Name=antenna_board

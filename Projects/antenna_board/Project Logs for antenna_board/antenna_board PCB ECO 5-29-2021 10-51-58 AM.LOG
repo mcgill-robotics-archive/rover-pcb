@@ -1,0 +1,79 @@
+Added Component: Designator=L1(IND_0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Category"; Value = "Filters"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "http://search.murata.co.jp/Ceramy/image/img/PDF/ENG/L0110S0101BLM18E.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://search.murata.co.jp/Ceramy/image/img/PDF/ENG/L0110S0101BLM18E.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current Rating"; Value = "2A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DC Resistance (DCR)"; Value = "50 mOhm Max"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Filter Type"; Value = "Differential Mode - Single"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height (Max)"; Value = "0.037" (0.95mm)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Impedance @ Frequency"; Value = "220 Ohm @ 100MHz"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Murata Electronics North America"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "BLM18EG221SN1D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Type"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package / Case"; Value = "0603 (1608 Metric)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Cut Tape (CT)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "1=0.33, 10=0.254, 50=0.1814, 100=0.1632, 250=0.13784, 500=0.12332, 1000=0.10519 (CAD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "RoHS Compliant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Size / Dimension"; Value = "0.063" L x 0.031" W (1.60mm x 0.80mm)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "382631"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "490-3992-1-ND"; VariantName = "[No Variations]"
+Added Component: Designator=U3(QFN65P400X400X80_HS-17N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Category"; Value = "Integrated Circuits (ICs)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "http://www.ftdichip.com/Support/Documents/DataSheets/ICs/DS_FT230X.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.ftdichip.com/Support/Documents/DataSheets/ICs/DS_FT230X.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current - Supply"; Value = "8mA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Function"; Value = "Bridge, USB to UART"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Interface"; Value = "UART"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "FTDI, Future Technology Devices International Ltd"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "FT230XQ-R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature"; Value = "-40°C ~ 85°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package / Case"; Value = "16-WQFN Exposed Pad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Cut Tape (CT)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "1=2.64, 25=2.5508, 100=2.4601, 250=2.21412, 500=1.994, 1000=1.89042, 2500=1.86128 (CAD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Protocol"; Value = "USB"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "RoHS Compliant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Standards"; Value = "USB 2.0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "7567"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Device Package"; Value = "16-QFN (4x4)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "768-1130-1-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage - Supply"; Value = "3.3 V ~ 5 V"; VariantName = "[No Variations]"
+Added Component: Designator=USB1(USB2.5-2H4E)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "WM4064-ND"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=VBUS Pin=L1-1
+Added Pin To Net: NetName=+5V Pin=L1-2
+Added Pin To Net: NetName=+3.3V Pin=U3-1
+Added Pin To Net: NetName=USB_TX Pin=U3-2
+Added Pin To Net: NetName=GND Pin=U3-3
+Added Pin To Net: NetName=NetR5_2 Pin=U3-4
+Added Pin To Net: NetName=USB RX LED Pin=U3-5
+Added Pin To Net: NetName=NetR7_1 Pin=U3-6
+Added Pin To Net: NetName=NetR6_1 Pin=U3-7
+Added Pin To Net: NetName=+3.3V Pin=U3-8
+Added Pin To Net: NetName=+3.3V Pin=U3-9
+Added Pin To Net: NetName=+3.3V Pin=U3-10
+Added Pin To Net: NetName=USB TX LED Pin=U3-11
+Added Pin To Net: NetName=GND Pin=U3-13
+Added Pin To Net: NetName=USB_RX Pin=U3-15
+Added Pin To Net: NetName=NetR4_2 Pin=U3-16
+Added Pin To Net: NetName=GND Pin=U3-17
+Added Pin To Net: NetName=GND Pin=U3-17
+Added Pin To Net: NetName=GND Pin=U3-17
+Added Pin To Net: NetName=GND Pin=U3-17
+Added Pin To Net: NetName=GND Pin=U3-17
+Added Pin To Net: NetName=VBUS Pin=USB1-1
+Added Pin To Net: NetName=DM Pin=USB1-2
+Added Pin To Net: NetName=DP Pin=USB1-3
+Added Pin To Net: NetName=GND Pin=USB1-4
+Added Pin To Net: NetName=SHIELD Pin=USB1-5
+Added Pin To Net: NetName=SHIELD Pin=USB1-6
+Added Member To Class: ClassName=antenna_board Member=Component L1 200R
+Added Member To Class: ClassName=antenna_board Member=Component U1 MCP1825S-3302E/DB
+Added Member To Class: ClassName=antenna_board Member=Component U2 XB3-24Z8ST
+Added Member To Class: ClassName=antenna_board Member=Component U3 FT230XQ
+Added Member To Class: ClassName=antenna_board Member=Component USB1 USB type-B jack
