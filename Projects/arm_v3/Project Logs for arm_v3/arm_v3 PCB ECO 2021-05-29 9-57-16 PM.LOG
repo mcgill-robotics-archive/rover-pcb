@@ -1,0 +1,19 @@
+Removed Pin From Net: NetName=+5V Pin=P6-1
+Removed Pin From Net: NetName=GND Pin=P6-6
+Removed Pin From Net: NetName=+5V Pin=U7-1
+Removed Pin From Net: NetName=GND Pin=U7-4
+Removed Pin From Net: NetName=+5V Pin=U8-1
+Removed Pin From Net: NetName=GND Pin=U8-4
+Removed Member From Class: ClassName=arm_v2 Member=P6
+Removed Member From Class: ClassName=arm_v2 Member=U7
+Removed Member From Class: ClassName=arm_v2 Member=U8
+Change Component Comment : Designator=P5 Old Comment=EN_A New Comment=ENC A&B
+Added Pin To Net: NetName=+5V Pin=P5-2
+Added Pin To Net: NetName=GND Pin=P5-5
+Added Pin To Net: NetName=ENC PWM A Pin=P5-3
+Added Pin To Net: NetName=ENC PWM A Pin=U2-57
+Added Net: Name=ENC PWM A
+Added Pin To Net: NetName=ENC PWM B Pin=P5-4
+Added Pin To Net: NetName=ENC PWM B Pin=U2-61
+Added Net: Name=ENC PWM B
+Change Class Name : Old Net Name=arm_v2 New Net Name=arm_v3
