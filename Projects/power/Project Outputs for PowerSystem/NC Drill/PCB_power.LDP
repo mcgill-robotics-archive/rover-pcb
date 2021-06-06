@@ -1,0 +1,4 @@
+Layer Pairs Export File for PCB: C:\Users\aboud\OneDrive\Documents\Robotics\git2\rover-pcb\Projects\power\PCB_power.PcbDoc
+LayersSetName=Top_Bot_Thru_Holes|DrillFile=pcb_power.txt|DrillLayers=gtl,gp1,gp2,gbl
+LayersSetName=Top_PWR Plane_Blind_Vias|DrillFile=pcb_power.tx1|DrillLayers=gtl,gp1
+LayersSetName=Top_GND Plane_Blind_Vias|DrillFile=pcb_power.tx2|DrillLayers=gtl,gp1,gp2

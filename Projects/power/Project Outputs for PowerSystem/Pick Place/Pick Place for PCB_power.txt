@@ -1,0 +1,99 @@
+Altium Designer Pick and Place Locations
+C:\Users\aboud\OneDrive\Documents\Robotics\git2\rover-pcb\Projects\power\Project Outputs for PowerSystem\Pick Place\Pick Place for PCB_power.txt
+
+========================================================================================================================
+File Design Information:
+
+Date:       05/06/21
+Time:       14:15
+Revision:   0c65a0de2564cb51968ac77fe4761ab011bb4829
+Variant:    No variations
+Units used: mil
+
+Designator       Comment              Layer    Footprint                 Center-X(mil) Center-Y(mil) Rotation            Description                                                
+J?               1-2351965-2          TopLayer 123519652                 4608.825      3340.394      360                 Connector                                                  
+"TO KILL SWITCH" B2B-XH-A(LF)(SN)     TopLayer CONN_B2B-XH-A(LF)(SN)_JST 918.293       3979.213      270                 "No Description Available"                                 
+J7               42820-2224           TopLayer 428202224                 2922.441      6794.409      180                 Connector                                                  
+J6               76829-0004           TopLayer 768290004                 7029.193      3507.795      270                 Connector                                                  
+J5               76829-0004           TopLayer 768290004                 5514.193      6401.614      270                 Connector                                                  
+F4               3557-2               TopLayer CONN_3557-2_KEY           4935.000      5530.000      360                 "No Description Available"                                 
+F3               3557-2               TopLayer CONN_3557-2_KEY           4880.000      7000.000      360                 "No Description Available"                                 
+J4               76829-0002           TopLayer 768290002                 4248.602      5507.913      90                  Connector                                                  
+J3               76829-0002           TopLayer 768290002                 4205.807      7020.000      90                  Connector                                                  
+J2               76829-0002           TopLayer 768290002                 4198.602      6360.000      90                  CPU                                                        
+D4               1N4148W-7-F          TopLayer SOD123_DIO                4847.913      4330.000      360                 "No Description Available"                                 
+J1               42820-2224           TopLayer 428202224                 1407.559      6794.409      180                 Connector                                                  
+F7               0606050.UXTHP        TopLayer 0606050UXTHP              2779.200      5842.305      140                 Fuse                                                       
+F6               0606050.UXTHP        TopLayer 0606050UXTHP              1696.898      5854.596      140                 Fuse                                                       
+F2               3557-2               TopLayer CONN_3557-2_KEY           4860.000      6325.713      360                 "No Description Available"                                 
+Q1               FMMT614TA            TopLayer SOT95P230X110-3N          4945.000      4483.143      180                 "Transistor BJT NPN"                                       
+U4               INA3221AQRGVRQ1      TopLayer RGV16_2P16X2P16_          5693.280      4350.001      270                 "No Description Available"                                 
+U2               TM4C123GH6PMI        TopLayer TSQFP50P1200X1200X120-64N 6380.512      5514.013      360                 "Tiva TM4C123GH6PM Microcontroller ARM Cortex 80 MHz FPU"  
+U3               FT230XQ              TopLayer QFN65P400X400X80_HS-17N   6016.615      6490.233      90                  "IC USB SERIAL BASIC UART 16QFN"                           
+R28              ""                   TopLayer J1-0603                   5205.000      4549.528      270                 Resistor                                                   
+R0               WSK06125L000FEA      TopLayer RES_WSK0612_VIS           2734.843      3262.422      270                 "No Description Available"                                 
+R27              WSK06125L000FEA      TopLayer RES_WSK0612_VIS           6555.157      3272.421      270                 "No Description Available"                                 
+R26              WSK06125L000FEA      TopLayer RES_WSK0612_VIS           6257.087      3277.578      270                 "No Description Available"                                 
+R25              WSK06125L000FEA      TopLayer RES_WSK0612_VIS           5959.841      3262.586      270                 "No Description Available"                                 
+R24              WSK06125L000FEA      TopLayer RES_WSK0612_VIS           3239.843      3257.578      270                 "No Description Available"                                 
+R23              WSK06125L000FEA      TopLayer RES_WSK0612_VIS           2045.158      3257.578      270                 "No Description Available"                                 
+R22              WSK06125L000FEA      TopLayer RES_WSK0612_VIS           1414.843      3262.582      270                 "No Description Available"                                 
+R21              WSK06125L000FEA      TopLayer RES_WSK0612_VIS           950.634       3262.582      270                 "No Description Available"                                 
+X1               "CRYSTAL 16MHZ"      TopLayer CRYSTAL_3.2x2.5           6853.503      5586.846      180                 "CRYSTAL 16MHZ 20PF SMD"                                   
+USB1             "USB type-B jack"    TopLayer USB2.5-2H4E               6786.182      6383.422      360                 "USB type-B jack"                                          
+U1               MCP1825S-3302E/DB    TopLayer SOT230P700X180-4N         6840.001      4435.000      90                  "500 mA, Low Voltage, Low Quiescent Current LDO Regulator" 
+R19              10k                  TopLayer RES_0603                  6094.999      4990.001      90                  "RES SMD 10K OHM 1% 1/10W 0603"                            
+R17              10k                  TopLayer RES_0603                  6267.244      4990.231      90                  "RES SMD 10K OHM 1% 1/10W 0603"                            
+R16              10k                  TopLayer RES_0603                  6000.001      4990.002      90                  "RES SMD 10K OHM 1% 1/10W 0603"                            
+R15              10k                  TopLayer RES_0603                  6189.999      4991.807      90                  "RES SMD 10K OHM 1% 1/10W 0603"                            
+R14              120                  TopLayer RES_0402_M                6299.999      6288.148      360                 "RES SMD 120 OHM 1% 1/10W 0402"                            
+R13              120                  TopLayer RES_0402_M                6076.052      6704.999      360                 "RES SMD 120 OHM 1% 1/10W 0402"                            
+R12              10k                  TopLayer RES_0603                  5835.000      4988.425      90                  "RES SMD 10K OHM 1% 1/10W 0603"                            
+R11              10k                  TopLayer RES_0603                  5916.613      4990.000      90                  "RES SMD 10K OHM 1% 1/10W 0603"                            
+R9               27                   TopLayer RES_0402_M                6522.286      6290.430      180                 "RES SMD 27 OHM 1% 1/10W 0402"                             
+R8               27                   TopLayer RES_0402_M                6520.000      6352.713      180                 "RES SMD 27 OHM 1% 1/10W 0402"                             
+R7               10k                  TopLayer RES_0402_M                6054.999      6130.430      270                 "RES SMD 10K OHM 1% 1/10W 0402"                            
+R6               10k                  TopLayer RES_0402_M                5930.000      6251.967      360                 "RES SMD 10K OHM 1% 1/10W 0402"                            
+R5               10k                  TopLayer RES_0402_M                5993.563      6126.178      270                 "RES SMD 10K OHM 1% 1/10W 0402"                            
+R4               10k                  TopLayer RES_0402_M                5895.000      6190.431      2.69999998181447E-6 "RES SMD 10K OHM 1% 1/10W 0402"                            
+R3               10k                  TopLayer RES_0402_M                6895.000      5429.998      90                  "RES SMD 10K OHM 1% 1/10W 0402"                            
+R2               10k                  TopLayer RES_0402_M                6375.000      5913.147      90                  "RES SMD 10K OHM 1% 1/10W 0402"                            
+R1               1M                   TopLayer RES_1206                  6870.000      5945.431      360                 "RES SMD 1M OHM 5% 1/4W 1206"                              
+L1               200R                 TopLayer IND_0603                  6999.999      4015.001      90                  "FILTER CHIP 220 OHM 2A 0603"                              
+F1               550mA                TopLayer RES_0402_M                6132.284      6025.000      180                 "FERRITE CHIP 40 OHM 550MA 0402"                           
+D2               "Led Red"            TopLayer TOPLED_0805               6238.307      6200.430      180                 "LED TOPLED 630NM SUP RED CLR SMD"                         
+D1               "Led Red"            TopLayer TOPLED_0805               5916.102      6675.000      180                 "LED TOPLED 630NM SUP RED CLR SMD"                         
+C30              100nF                TopLayer CAP_0603                  5706.074      4638.111      180                 "CAP CER 0.1UF 50V 20% X7R 0603"                           
+C29              100nF                TopLayer CAP_0402_M                6225.000      6570.001      90                  "CAP CER 100NF 50V 20% X5R 0402"                           
+C28              100nF                TopLayer CAP_0402_M                6155.000      6570.001      90                  "CAP CER 100NF 50V 20% X5R 0402"                           
+C27              100nF                TopLayer CAP_0402_M                6965.000      5429.999      90                  "CAP CER 100NF 50V 20% X5R 0402"                           
+C26              100nF                TopLayer CAP_0402_M                6420.079      5027.244      180                 "CAP CER 100NF 50V 20% X5R 0402"                           
+C25              1uF                  TopLayer CAP_0402_M                6420.079      4952.674      180                 "CAP CER 1UF 25V 10% X5R 0402"                             
+C24              2.2uF                TopLayer CAP_0603                  6417.913      5107.674      180                 "CAP CER 2.2UF 35V 10% X5R 0603"                           
+C23              10uF                 TopLayer CAP_0603                  6085.000      5915.000      360                 "CAP CER 10UF 10V 20% X5R 0603"                            
+C22              100nF                TopLayer CAP_0402_M                6084.999      5769.999      360                 "CAP CER 100NF 50V 20% X5R 0402"                           
+C21              10nF                 TopLayer CAP_0402_M                6079.999      5849.999      360                 "CAP CER 10000PF 50V 10% X7R 0402"                         
+C20              100nF                TopLayer CAP_0402_M                6772.206      5398.110      90                  "CAP CER 100NF 50V 20% X5R 0402"                           
+C19              13pF                 TopLayer CAP_0402_M                6864.211      5704.999      270                 "CAP CER 13PF 50V 5% NP0 0402"                             
+C18              13pF                 TopLayer CAP_0402_M                6990.000      5588.110      270                 "CAP CER 13PF 50V 5% NP0 0402"                             
+C17              100nF                TopLayer CAP_0402_M                6560.000      5175.000      90                  "CAP CER 100NF 50V 20% X5R 0402"                           
+C16              10nF                 TopLayer CAP_0402_M                6825.000      5399.999      90                  "CAP CER 10000PF 50V 10% X7R 0402"                         
+C15              100nF                TopLayer CAP_0402_M                6091.418      5464.999      90                  "CAP CER 100NF 50V 20% X5R 0402"                           
+C14              100nF                TopLayer CAP_0402_M                6483.421      5172.320      90                  "CAP CER 100NF 50V 20% X5R 0402"                           
+C13              10nF                 TopLayer CAP_0402_M                6310.000      5890.000      360                 "CAP CER 10000PF 50V 10% X7R 0402"                         
+C12              10uF                 TopLayer CAP_0603                  7080.000      4440.000      90                  "CAP CER 10UF 10V 20% X5R 0603"                            
+C11              100uF                TopLayer CAP_1206                  7280.001      4435.000      90                  "CAP CER 100UF 6.3V X5R 1206"                              
+C10              100uF                TopLayer CAP_1206                  7175.000      4434.999      90                  "CAP CER 100UF 6.3V X5R 1206"                              
+C9               1uF                  TopLayer CAP_0402_M                6600.000      4439.998      270                 "CAP CER 1UF 25V 10% X5R 0402"                             
+C8               100uF                TopLayer CAP_1206                  6500.000      4435.430      90                  "CAP CER 100UF 6.3V X5R 1206"                              
+C7               100uF                TopLayer CAP_1206                  6366.574      4433.816      90                  "CAP CER 100UF 6.3V X5R 1206"                              
+C6               2.2uF                TopLayer CAP_0402_M                6937.165      4106.802      270                 "CAP CER 2.2UF 10V 20% X5R 0402"                           
+C5               2.2uF                TopLayer CAP_0402_M                6797.165      4106.803      270                 "CAP CER 2.2UF 10V 20% X5R 0402"                           
+C4               100nF                TopLayer CAP_0402_M                6862.165      4106.802      270                 "CAP CER 100NF 50V 20% X5R 0402"                           
+C3               10nF                 TopLayer CAP_0402_M                7095.000      4001.889      270                 "CAP CER 10000PF 50V 10% X7R 0402"                         
+C2               10nF                 TopLayer CAP_1206                  7075.001      5945.429      180                 "CAP CER 10000PF 500V X7R 1206"                            
+C1               100uF                TopLayer CapAlu6.3mmx12.5mm        6430.787      6575.430      360                 "Capacitor 35v 100uF 6.3mm"                                
+"Relay B"        J115F11AH24VDCS61.5U TopLayer MODULE4                   1785.000      4784.998      360                 "Single-Pole Single-Throw Relay"                           
+"Relay A"        J115F11AH24VDCS61.5U TopLayer MODULE4                   1780.000      3835.000      360                 "Single-Pole Single-Throw Relay"                           
+P1               MHDR1X5              TopLayer MHDR1X5                   6425.000      6010.430      360                 "Header, 5-Pin"                                            
+D3               1N4148W-7-F          TopLayer SOD123_DIO                4852.087      4160.000      180                 "No Description Available"                                 

@@ -1,0 +1,108 @@
+*************************************************************
+FileName = PCB_power.PcbDoc
+ODB++ directory structure
+*************************************************************
+Generated File : C:\Users\aboud\OneDrive\Documents\Robotics\git2\rover-pcb\Projects\power\Project Outputs for PowerSystem\ODB\odb\matrix\matrix
+
+Generated File : C:\Users\aboud\OneDrive\Documents\Robotics\git2\rover-pcb\Projects\power\Project Outputs for PowerSystem\ODB\odb\steps\pcb\profile
+
+Generated File : C:\Users\aboud\OneDrive\Documents\Robotics\git2\rover-pcb\Projects\power\Project Outputs for PowerSystem\ODB\odb\steps\pcb\stephdr
+
+Generated File : C:\Users\aboud\OneDrive\Documents\Robotics\git2\rover-pcb\Projects\power\Project Outputs for PowerSystem\ODB\odb\steps\pcb\attrlist
+
+Generated File : C:\Users\aboud\OneDrive\Documents\Robotics\git2\rover-pcb\Projects\power\Project Outputs for PowerSystem\ODB\odb\steps\pcb\layers\top_overlay\features
+
+Generated File : C:\Users\aboud\OneDrive\Documents\Robotics\git2\rover-pcb\Projects\power\Project Outputs for PowerSystem\ODB\odb\steps\pcb\layers\top_overlay\attrlist
+
+Generated File : C:\Users\aboud\OneDrive\Documents\Robotics\git2\rover-pcb\Projects\power\Project Outputs for PowerSystem\ODB\odb\steps\pcb\layers\bottom_paste\features
+
+Generated File : C:\Users\aboud\OneDrive\Documents\Robotics\git2\rover-pcb\Projects\power\Project Outputs for PowerSystem\ODB\odb\steps\pcb\layers\bottom_paste\attrlist
+
+Generated File : C:\Users\aboud\OneDrive\Documents\Robotics\git2\rover-pcb\Projects\power\Project Outputs for PowerSystem\ODB\odb\steps\pcb\layers\bottom_overlay\features
+
+Generated File : C:\Users\aboud\OneDrive\Documents\Robotics\git2\rover-pcb\Projects\power\Project Outputs for PowerSystem\ODB\odb\steps\pcb\layers\bottom_overlay\attrlist
+
+Generated File : C:\Users\aboud\OneDrive\Documents\Robotics\git2\rover-pcb\Projects\power\Project Outputs for PowerSystem\ODB\odb\steps\pcb\layers\gnd_plane\features
+
+Generated File : C:\Users\aboud\OneDrive\Documents\Robotics\git2\rover-pcb\Projects\power\Project Outputs for PowerSystem\ODB\odb\steps\pcb\layers\gnd_plane\attrlist
+
+Generated File : C:\Users\aboud\OneDrive\Documents\Robotics\git2\rover-pcb\Projects\power\Project Outputs for PowerSystem\ODB\odb\steps\pcb\layers\bottom_layer\features
+
+Generated File : C:\Users\aboud\OneDrive\Documents\Robotics\git2\rover-pcb\Projects\power\Project Outputs for PowerSystem\ODB\odb\steps\pcb\layers\bottom_layer\attrlist
+
+Generated File : C:\Users\aboud\OneDrive\Documents\Robotics\git2\rover-pcb\Projects\power\Project Outputs for PowerSystem\ODB\odb\steps\pcb\layers\pwr_plane\features
+
+Generated File : C:\Users\aboud\OneDrive\Documents\Robotics\git2\rover-pcb\Projects\power\Project Outputs for PowerSystem\ODB\odb\steps\pcb\layers\pwr_plane\attrlist
+
+Generated File : C:\Users\aboud\OneDrive\Documents\Robotics\git2\rover-pcb\Projects\power\Project Outputs for PowerSystem\ODB\odb\steps\pcb\layers\keep-out_layer\features
+
+Generated File : C:\Users\aboud\OneDrive\Documents\Robotics\git2\rover-pcb\Projects\power\Project Outputs for PowerSystem\ODB\odb\steps\pcb\layers\keep-out_layer\attrlist
+
+Generated File : C:\Users\aboud\OneDrive\Documents\Robotics\git2\rover-pcb\Projects\power\Project Outputs for PowerSystem\ODB\odb\steps\pcb\layers\mechanical_1\features
+
+Generated File : C:\Users\aboud\OneDrive\Documents\Robotics\git2\rover-pcb\Projects\power\Project Outputs for PowerSystem\ODB\odb\steps\pcb\layers\mechanical_1\attrlist
+
+Generated File : C:\Users\aboud\OneDrive\Documents\Robotics\git2\rover-pcb\Projects\power\Project Outputs for PowerSystem\ODB\odb\steps\pcb\layers\mechanical_5\features
+
+Generated File : C:\Users\aboud\OneDrive\Documents\Robotics\git2\rover-pcb\Projects\power\Project Outputs for PowerSystem\ODB\odb\steps\pcb\layers\mechanical_5\attrlist
+
+Generated File : C:\Users\aboud\OneDrive\Documents\Robotics\git2\rover-pcb\Projects\power\Project Outputs for PowerSystem\ODB\odb\steps\pcb\layers\bottom_solder\features
+
+Generated File : C:\Users\aboud\OneDrive\Documents\Robotics\git2\rover-pcb\Projects\power\Project Outputs for PowerSystem\ODB\odb\steps\pcb\layers\bottom_solder\attrlist
+
+Generated File : C:\Users\aboud\OneDrive\Documents\Robotics\git2\rover-pcb\Projects\power\Project Outputs for PowerSystem\ODB\odb\steps\pcb\layers\top_paste\features
+
+Generated File : C:\Users\aboud\OneDrive\Documents\Robotics\git2\rover-pcb\Projects\power\Project Outputs for PowerSystem\ODB\odb\steps\pcb\layers\top_paste\attrlist
+
+Generated File : C:\Users\aboud\OneDrive\Documents\Robotics\git2\rover-pcb\Projects\power\Project Outputs for PowerSystem\ODB\odb\steps\pcb\layers\mechanical_15\features
+
+Generated File : C:\Users\aboud\OneDrive\Documents\Robotics\git2\rover-pcb\Projects\power\Project Outputs for PowerSystem\ODB\odb\steps\pcb\layers\mechanical_15\attrlist
+
+Generated File : C:\Users\aboud\OneDrive\Documents\Robotics\git2\rover-pcb\Projects\power\Project Outputs for PowerSystem\ODB\odb\steps\pcb\layers\mechanical_16\features
+
+Generated File : C:\Users\aboud\OneDrive\Documents\Robotics\git2\rover-pcb\Projects\power\Project Outputs for PowerSystem\ODB\odb\steps\pcb\layers\mechanical_16\attrlist
+
+Generated File : C:\Users\aboud\OneDrive\Documents\Robotics\git2\rover-pcb\Projects\power\Project Outputs for PowerSystem\ODB\odb\steps\pcb\layers\top_solder\features
+
+Generated File : C:\Users\aboud\OneDrive\Documents\Robotics\git2\rover-pcb\Projects\power\Project Outputs for PowerSystem\ODB\odb\steps\pcb\layers\top_solder\attrlist
+
+Generated File : C:\Users\aboud\OneDrive\Documents\Robotics\git2\rover-pcb\Projects\power\Project Outputs for PowerSystem\ODB\odb\steps\pcb\layers\top_layer\features
+
+Generated File : C:\Users\aboud\OneDrive\Documents\Robotics\git2\rover-pcb\Projects\power\Project Outputs for PowerSystem\ODB\odb\steps\pcb\layers\top_layer\attrlist
+
+Generated File : C:\Users\aboud\OneDrive\Documents\Robotics\git2\rover-pcb\Projects\power\Project Outputs for PowerSystem\ODB\odb\steps\pcb\layers\mechanical_13\features
+
+Generated File : C:\Users\aboud\OneDrive\Documents\Robotics\git2\rover-pcb\Projects\power\Project Outputs for PowerSystem\ODB\odb\steps\pcb\layers\mechanical_13\attrlist
+
+Generated File : C:\Users\aboud\OneDrive\Documents\Robotics\git2\rover-pcb\Projects\power\Project Outputs for PowerSystem\ODB\odb\steps\pcb\layers\drill2\features
+
+Generated File : C:\Users\aboud\OneDrive\Documents\Robotics\git2\rover-pcb\Projects\power\Project Outputs for PowerSystem\ODB\odb\steps\pcb\layers\drill2\attrlist
+
+Generated File : C:\Users\aboud\OneDrive\Documents\Robotics\git2\rover-pcb\Projects\power\Project Outputs for PowerSystem\ODB\odb\steps\pcb\layers\drill2\tools
+
+Generated File : C:\Users\aboud\OneDrive\Documents\Robotics\git2\rover-pcb\Projects\power\Project Outputs for PowerSystem\ODB\odb\steps\pcb\layers\drill\features
+
+Generated File : C:\Users\aboud\OneDrive\Documents\Robotics\git2\rover-pcb\Projects\power\Project Outputs for PowerSystem\ODB\odb\steps\pcb\layers\drill\attrlist
+
+Generated File : C:\Users\aboud\OneDrive\Documents\Robotics\git2\rover-pcb\Projects\power\Project Outputs for PowerSystem\ODB\odb\steps\pcb\layers\drill\tools
+
+Generated File : C:\Users\aboud\OneDrive\Documents\Robotics\git2\rover-pcb\Projects\power\Project Outputs for PowerSystem\ODB\odb\steps\pcb\layers\mechanical_7\features
+
+Generated File : C:\Users\aboud\OneDrive\Documents\Robotics\git2\rover-pcb\Projects\power\Project Outputs for PowerSystem\ODB\odb\steps\pcb\layers\mechanical_7\attrlist
+
+Generated File : C:\Users\aboud\OneDrive\Documents\Robotics\git2\rover-pcb\Projects\power\Project Outputs for PowerSystem\ODB\odb\steps\pcb\layers\drill1\features
+
+Generated File : C:\Users\aboud\OneDrive\Documents\Robotics\git2\rover-pcb\Projects\power\Project Outputs for PowerSystem\ODB\odb\steps\pcb\layers\drill1\attrlist
+
+Generated File : C:\Users\aboud\OneDrive\Documents\Robotics\git2\rover-pcb\Projects\power\Project Outputs for PowerSystem\ODB\odb\steps\pcb\layers\drill1\tools
+
+Generated File : C:\Users\aboud\OneDrive\Documents\Robotics\git2\rover-pcb\Projects\power\Project Outputs for PowerSystem\ODB\odb\steps\pcb\layers\comp_+_top\features
+
+Generated File : C:\Users\aboud\OneDrive\Documents\Robotics\git2\rover-pcb\Projects\power\Project Outputs for PowerSystem\ODB\odb\steps\pcb\layers\comp_+_top\components
+
+Generated File : C:\Users\aboud\OneDrive\Documents\Robotics\git2\rover-pcb\Projects\power\Project Outputs for PowerSystem\ODB\odb\steps\pcb\layers\rout\features
+
+Generated File : C:\Users\aboud\OneDrive\Documents\Robotics\git2\rover-pcb\Projects\power\Project Outputs for PowerSystem\ODB\odb\steps\pcb\layers\rout\tools
+
+Generated File : C:\Users\aboud\OneDrive\Documents\Robotics\git2\rover-pcb\Projects\power\Project Outputs for PowerSystem\ODB\odb\steps\pcb\eda\data
+

@@ -1,0 +1,10 @@
+Output: Design Rules Check
+Type  : DRC
+From  : PCB Document [PCB_power.PcbDoc]
+   Generated File[PCB_power.html]
+
+
+Files Generated   : 1
+Documents Printed : 0
+
+Finished Output Generation At 2:16:12 PM On 6/5/2021
