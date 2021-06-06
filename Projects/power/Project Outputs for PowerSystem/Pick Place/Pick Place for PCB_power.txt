@@ -5,8 +5,8 @@ C:\Users\aboud\OneDrive\Documents\Robotics\git2\rover-pcb\Projects\power\Project
 File Design Information:
 
 Date:       06/06/21
-Time:       11:10
-Revision:   6f4735f742bc0551ef3325f7c4c49558d414a7f6
+Time:       15:16
+Revision:   953a6325e16b4b173a162897310cee44be482c61
 Variant:    No variations
 Units used: mil
 
@@ -22,8 +22,8 @@ J4               76829-0002           TopLayer 768290002                 4248.60
 J3               76829-0002           TopLayer 768290002                 4205.807      7020.000      90                  Connector                                                  
 J2               76829-0002           TopLayer 768290002                 4198.602      6360.000      90                  CPU                                                        
 D4               1N4148W-7-F          TopLayer SOD123_DIO                4847.913      4330.000      360                 "No Description Available"                                 
-J1               42820-2224           TopLayer 428202224                 1407.559      6794.409      180                 Connector                                                  
-F7               0606050.UXTHP        TopLayer 0606050UXTHP              2805.915      5857.305      140                 Fuse                                                       
+J1               42820-2224           TopLayer 428202224                 1428.149      6828.740      180                 Connector                                                  
+F7               0606050.UXTHP        TopLayer 0606050UXTHP              2848.102      5827.293      140                 Fuse                                                       
 F6               0606050.UXTHP        TopLayer 0606050UXTHP              1696.898      5854.596      140                 Fuse                                                       
 F2               3557-2               TopLayer CONN_3557-2_KEY           4860.000      6325.713      360                 "No Description Available"                                 
 Q1               FMMT614TA            TopLayer SOT95P230X110-3N          4945.000      4483.143      180                 "Transistor BJT NPN"                                       
