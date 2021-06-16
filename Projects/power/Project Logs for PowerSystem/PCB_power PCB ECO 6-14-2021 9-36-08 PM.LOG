@@ -1,0 +1,22 @@
+Removed Pin From Net: NetName=IN+1 Pin=J8-A1
+Removed Pin From Net: NetName=IN+1 Pin=J8-A2
+Removed Pin From Net: NetName=IN+1 Pin=J8-A3
+Removed Pin From Net: NetName=IN+1 Pin=J8-A4
+Removed Pin From Net: NetName=GND Pin=J8-B1
+Removed Pin From Net: NetName=GND Pin=J8-B2
+Removed Pin From Net: NetName=GND Pin=J8-B3
+Removed Pin From Net: NetName=GND Pin=J8-B4
+Change Component Footprint: Designator=J8 Old Footprint=123519652 New Footprint=2018431040
+Change Component Comment : Designator=J8 Old Comment=1-2351965-2 New Comment=201843-1040
+Change component parameters: Designator = "J8"; Footprint = "2018431040"; UniqueID = "\WBHPHBPJ"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Datasheet Link"; Value = "https://www.molex.com/pdm_docs/sd/2018431040_sd.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Height"; Value = "11.58mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Name"; Value = "Molex"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Part_Number"; Value = "201843-1040"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser2 Part Number"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser2 Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=J8-1
+Added Pin To Net: NetName=GND Pin=J8-2
+Added Pin To Net: NetName=IN+1 Pin=J8-3
+Added Pin To Net: NetName=IN+1 Pin=J8-4

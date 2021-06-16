@@ -1,0 +1,11 @@
+Removed Pin From Net: NetName=NetF6_2 Pin=J1-1
+Removed Pin From Net: NetName=NetF6_2 Pin=J1-2
+Removed Pin From Net: NetName=NetF6_2 Pin=J1-3
+Removed Pin From Net: NetName=GND Pin=J1-4
+Removed Pin From Net: NetName=GND Pin=J1-5
+Removed Pin From Net: NetName=GND Pin=J1-6
+Removed Pin From Net: NetName=NetF7_2 Pin=J7-1
+Removed Pin From Net: NetName=NetF7_2 Pin=J7-2
+Removed Pin From Net: NetName=NetF7_2 Pin=J7-3
+Removed Member From Class: ClassName=TM4C123GH6PMI Member=J1
+Removed Member From Class: ClassName=TM4C123GH6PMI Member=J7

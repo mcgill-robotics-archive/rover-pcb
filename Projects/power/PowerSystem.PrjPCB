@@ -97,10 +97,6 @@ DocumentUniqueId=
 DocumentPath=Project Outputs for PowerSystem\Design Rule Check - PCB_power.html
 DItemRevisionGUID=
 
-[GeneratedDocument2]
-DocumentPath=Project Outputs for PowerSystem\Net Status - PCB_power.html
-DItemRevisionGUID=
-
 [Configuration1]
 Name=Sources
 ParameterCount=0

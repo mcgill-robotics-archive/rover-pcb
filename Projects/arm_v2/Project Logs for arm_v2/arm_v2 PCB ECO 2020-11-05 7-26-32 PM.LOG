@@ -1,0 +1,17 @@
+Removed Pin From Net: NetName=NC1 Pin=P9-1
+Removed Pin From Net: NetName=GND Pin=P9-2
+Removed Pin From Net: NetName=NC2 Pin=P9-3
+Removed Pin From Net: NetName=GND Pin=P9-4
+Removed Pin From Net: NetName=NC3 Pin=P9-5
+Removed Pin From Net: NetName=GND Pin=P9-6
+Removed Pin From Net: NetName=NC4 Pin=P9-7
+Removed Pin From Net: NetName=GND Pin=P9-8
+Added Pin To Net: NetName=GND Pin=P9-1
+Added Pin To Net: NetName=NC1 Pin=P9-2
+Added Pin To Net: NetName=GND Pin=P9-3
+Added Pin To Net: NetName=NC2 Pin=P9-4
+Added Pin To Net: NetName=GND Pin=P9-5
+Added Pin To Net: NetName=NC3 Pin=P9-6
+Added Pin To Net: NetName=GND Pin=P9-7
+Added Pin To Net: NetName=NC4 Pin=P9-8
+Added Member To Class: ClassName=arm_v2 Member=Component P9 Switches

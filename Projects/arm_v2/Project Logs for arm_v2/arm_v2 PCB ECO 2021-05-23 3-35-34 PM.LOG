@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=CLK_A Pin=U2-22
+Removed Pin From Net: NetName=CLK_B Pin=U2-29
+Removed Pin From Net: NetName=nSLEEP_B Pin=U2-30
+Added Pin To Net: NetName=CLK_A Pin=U2-19
+Added Pin To Net: NetName=nSLEEP_B Pin=U2-29
+Added Pin To Net: NetName=CLK_B Pin=U2-30
