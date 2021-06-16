@@ -1,0 +1,52 @@
+Removed Pin From Net: NetName=NetJ1_1 Pin=J1-1
+Removed Pin From Net: NetName=NetJ1_1 Pin=J1-2
+Removed Pin From Net: NetName=NetJ1_1 Pin=J1-3
+Removed Pin From Net: NetName=GND Pin=J1-4
+Removed Pin From Net: NetName=GND Pin=J1-5
+Removed Pin From Net: NetName=GND Pin=J1-6
+Removed Pin From Net: NetName=NetJ7_1 Pin=J7-1
+Removed Pin From Net: NetName=NetJ7_1 Pin=J7-2
+Removed Pin From Net: NetName=NetJ7_1 Pin=J7-3
+Removed Pin From Net: NetName=GND Pin=J7-4
+Removed Pin From Net: NetName=GND Pin=J7-5
+Removed Pin From Net: NetName=GND Pin=J7-6
+Removed Pin From Net: NetName=NetJ9_1 Pin=J9-1
+Removed Pin From Net: NetName=NetJ9_1 Pin=J9-2
+Removed Pin From Net: NetName=NetJ9_1 Pin=J9-3
+Removed Pin From Net: NetName=GND Pin=J9-4
+Removed Pin From Net: NetName=GND Pin=J9-5
+Removed Pin From Net: NetName=GND Pin=J9-6
+Removed Pin From Net: NetName=NetJ10_1 Pin=J10-1
+Removed Pin From Net: NetName=NetJ10_1 Pin=J10-2
+Removed Pin From Net: NetName=NetJ10_1 Pin=J10-3
+Removed Pin From Net: NetName=GND Pin=J10-4
+Removed Pin From Net: NetName=GND Pin=J10-5
+Removed Pin From Net: NetName=GND Pin=J10-6
+Added Pin To Net: NetName=GND Pin=J1-1
+Added Pin To Net: NetName=GND Pin=J1-2
+Added Pin To Net: NetName=GND Pin=J1-3
+Added Pin To Net: NetName=NetJ1_1 Pin=J1-4
+Added Pin To Net: NetName=NetJ1_1 Pin=J1-5
+Added Pin To Net: NetName=NetJ1_1 Pin=J1-6
+Added Pin To Net: NetName=GND Pin=J7-1
+Added Pin To Net: NetName=GND Pin=J7-2
+Added Pin To Net: NetName=GND Pin=J7-3
+Added Pin To Net: NetName=NetJ7_1 Pin=J7-4
+Added Pin To Net: NetName=NetJ7_1 Pin=J7-5
+Added Pin To Net: NetName=NetJ7_1 Pin=J7-6
+Added Pin To Net: NetName=GND Pin=J9-1
+Added Pin To Net: NetName=GND Pin=J9-2
+Added Pin To Net: NetName=GND Pin=J9-3
+Added Pin To Net: NetName=NetJ9_1 Pin=J9-4
+Added Pin To Net: NetName=NetJ9_1 Pin=J9-5
+Added Pin To Net: NetName=NetJ9_1 Pin=J9-6
+Added Pin To Net: NetName=GND Pin=J10-1
+Added Pin To Net: NetName=GND Pin=J10-2
+Added Pin To Net: NetName=GND Pin=J10-3
+Added Pin To Net: NetName=NetJ10_1 Pin=J10-4
+Added Pin To Net: NetName=NetJ10_1 Pin=J10-5
+Added Pin To Net: NetName=NetJ10_1 Pin=J10-6
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component J1 76825-0006
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component J7 3557-2
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component J9 3557-2
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component J10 76825-0006

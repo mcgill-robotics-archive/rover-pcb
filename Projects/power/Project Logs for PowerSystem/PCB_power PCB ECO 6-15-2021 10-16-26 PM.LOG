@@ -1,0 +1,77 @@
+Removed Pin From Net: NetName=RELAY_B Pin=F6-1
+Removed Pin From Net: NetName=RELAY_B Pin=F6-4
+Removed Pin From Net: NetName=RELAY_B Pin=F7-1
+Removed Pin From Net: NetName=RELAY_B Pin=F7-4
+Removed Member From Class: ClassName=TM4C123GH6PMI Member=F6
+Removed Member From Class: ClassName=TM4C123GH6PMI Member=F7
+Added Component: Designator=J1(CONN_3557-2_KEY)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Built_By"; Value = "EMA_Cory"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Copyright"; Value = "Copyright (C) 2018 Accelerated Designs. All rights reserved"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "3557-2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RefDes"; Value = "RefDes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SourceLibrary"; Value = "Keystone Electronics_Complete_2020-01-22"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "DEV"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Keystone Electronics"; VariantName = "[No Variations]"
+Added Component: Designator=J7(CONN_3557-2_KEY)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Built_By"; Value = "EMA_Cory"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Copyright"; Value = "Copyright (C) 2018 Accelerated Designs. All rights reserved"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "3557-2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RefDes"; Value = "RefDes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SourceLibrary"; Value = "Keystone Electronics_Complete_2020-01-22"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "DEV"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Keystone Electronics"; VariantName = "[No Variations]"
+Added Component: Designator=J9(CONN_3557-2_KEY)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Built_By"; Value = "EMA_Cory"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Copyright"; Value = "Copyright (C) 2018 Accelerated Designs. All rights reserved"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "3557-2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RefDes"; Value = "RefDes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SourceLibrary"; Value = "Keystone Electronics_Complete_2020-01-22"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "DEV"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Keystone Electronics"; VariantName = "[No Variations]"
+Added Component: Designator=J10(CONN_3557-2_KEY)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Built_By"; Value = "EMA_Cory"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Copyright"; Value = "Copyright (C) 2018 Accelerated Designs. All rights reserved"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "3557-2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RefDes"; Value = "RefDes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SourceLibrary"; Value = "Keystone Electronics_Complete_2020-01-22"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "DEV"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Keystone Electronics"; VariantName = "[No Variations]"
+Added Component: Designator=J?(0768250006)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Arrow Part Number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "http://www.molex.com/webdocs/datasheets/pdf/en-us/0768250006_PCB_HEADERS.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "16mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Molex"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "76825-0006"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "538-76825-0006"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Molex/76825-0006?qs=KpdAywxU0127%252BKA4qQrPHA%3D%3D"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=RELAY_B Pin=J1-4
+Added Pin To Net: NetName=RELAY_B Pin=J7-3
+Added Pin To Net: NetName=RELAY_B Pin=J7-4
+Added Pin To Net: NetName=RELAY_B Pin=J9-3
+Added Pin To Net: NetName=RELAY_B Pin=J9-4
+Added Pin To Net: NetName=RELAY_B Pin=J10-3
+Added Pin To Net: NetName=RELAY_B Pin=J10-4
+Added Pin To Net: NetName=NetJ1_1 Pin=J1-1
+Added Pin To Net: NetName=NetJ1_1 Pin=J1-2
+Added Net: Name=NetJ1_1
+Added Pin To Net: NetName=NetJ7_1 Pin=J7-1
+Added Pin To Net: NetName=NetJ7_1 Pin=J7-2
+Added Net: Name=NetJ7_1
+Added Pin To Net: NetName=NetJ9_1 Pin=J9-1
+Added Pin To Net: NetName=NetJ9_1 Pin=J9-2
+Added Net: Name=NetJ9_1
+Added Pin To Net: NetName=NetJ10_1 Pin=J10-1
+Added Pin To Net: NetName=NetJ10_1 Pin=J10-2
+Added Net: Name=NetJ10_1
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component J1 3557-2
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component J7 3557-2
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component J9 3557-2
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component J10 3557-2
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component J? 76825-0006
+Added Room: Name=TM4C123GH6PMI

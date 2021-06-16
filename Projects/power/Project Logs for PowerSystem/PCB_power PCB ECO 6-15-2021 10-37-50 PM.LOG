@@ -1,0 +1,29 @@
+Added Pin To Net: NetName=NetJ1_1 Pin=J?-1
+Added Pin To Net: NetName=NetJ7_1 Pin=J?-1
+Added Pin To Net: NetName=NetJ9_1 Pin=J?-1
+Added Pin To Net: NetName=NetJ10_1 Pin=J?-1
+Added Pin To Net: NetName=NetJ1_1 Pin=J?-2
+Added Pin To Net: NetName=NetJ7_1 Pin=J?-2
+Added Pin To Net: NetName=NetJ9_1 Pin=J?-2
+Added Pin To Net: NetName=NetJ10_1 Pin=J?-2
+Added Pin To Net: NetName=NetJ1_1 Pin=J?-3
+Added Pin To Net: NetName=NetJ7_1 Pin=J?-3
+Added Pin To Net: NetName=NetJ9_1 Pin=J?-3
+Added Pin To Net: NetName=NetJ10_1 Pin=J?-3
+Added Pin To Net: NetName=GND Pin=J?-4
+Added Pin To Net: NetName=GND Pin=J?-4
+Added Pin To Net: NetName=GND Pin=J?-4
+Added Pin To Net: NetName=GND Pin=J?-4
+Added Pin To Net: NetName=GND Pin=J?-5
+Added Pin To Net: NetName=GND Pin=J?-5
+Added Pin To Net: NetName=GND Pin=J?-5
+Added Pin To Net: NetName=GND Pin=J?-5
+Added Pin To Net: NetName=GND Pin=J?-6
+Added Pin To Net: NetName=GND Pin=J?-6
+Added Pin To Net: NetName=GND Pin=J?-6
+Added Pin To Net: NetName=GND Pin=J?-6
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component J1 3557-2
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component J7 3557-2
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component J? 76825-0006
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component J? 76825-0006
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component J? 76825-0006

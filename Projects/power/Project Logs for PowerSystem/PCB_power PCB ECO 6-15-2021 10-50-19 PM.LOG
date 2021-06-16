@@ -1,0 +1,7 @@
+Change Component Designator: OldDesignator=J? NewDesignator=J1
+Change Component Designator: OldDesignator=J? NewDesignator=J7
+Change Component Designator: OldDesignator=J? NewDesignator=J9
+Change Component Designator: OldDesignator=J? NewDesignator=J10
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component J7 3557-2
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component J9 3557-2
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component J10 76825-0006
