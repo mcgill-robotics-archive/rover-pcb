@@ -1,0 +1,23 @@
+Removed Pin From Net: NetName=NetF7_1 Pin=F7-1
+Removed Pin From Net: NetName=NetF7_1 Pin=F7-2
+Removed Pin From Net: NetName=RELAY_B Pin=F7-3
+Removed Pin From Net: NetName=RELAY_B Pin=F7-4
+Removed Pin From Net: NetName=NetF9_1 Pin=F9-1
+Removed Pin From Net: NetName=NetF9_1 Pin=F9-2
+Change Component Designator: OldDesignator=F9 NewDesignator=F7
+Added Component: Designator=F9(CONN_3557-2_KEY)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Built_By"; Value = "EMA_Cory"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Copyright"; Value = "Copyright (C) 2018 Accelerated Designs. All rights reserved"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "3557-2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RefDes"; Value = "RefDes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SourceLibrary"; Value = "Keystone Electronics_Complete_2020-01-22"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "DEV"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Keystone Electronics"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetF7_1 Pin=F7-1
+Added Pin To Net: NetName=NetF7_1 Pin=F7-2
+Added Pin To Net: NetName=NetF9_1 Pin=F9-1
+Added Pin To Net: NetName=NetF9_1 Pin=F9-2
+Added Pin To Net: NetName=RELAY_B Pin=F9-3
+Added Pin To Net: NetName=RELAY_B Pin=F9-4
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component J9 76825-0006

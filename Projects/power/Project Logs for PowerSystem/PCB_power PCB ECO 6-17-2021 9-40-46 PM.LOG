@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=NetD3_2 Pin=TO KILL SWITCH-1
+Removed Pin From Net: NetName=GND Pin=TO KILL SWITCH-2
+Removed Member From Class: ClassName=TM4C123GH6PMI Member=TO KILL SWITCH
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component F7 3555-2
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component J9 76825-0006

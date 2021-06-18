@@ -1,0 +1,13 @@
+Added Component: Designator=J12(CON_430450213_MOL)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Built_By"; Value = "Molex_Team"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Copyright"; Value = "Copyright (C) 2018 Accelerated Designs. All rights reserved"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "430450213"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RefDes"; Value = "RefDes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SourceLibrary"; Value = "Add_to_database_2021-04-21"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "DEV"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Molex Connector Corporation"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetD3_2 Pin=J12-1
+Added Pin To Net: NetName=GND Pin=J12-2
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component J9 76825-0006
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component J12 ToKillSwitch

@@ -1,0 +1,13 @@
+Change Component Footprint: Designator=F9 Old Footprint=CONN_3557-2_KEY New Footprint=35552
+Change Component Comment : Designator=F9 Old Comment=3557-2 New Comment=3555-2
+Change component parameters: Designator = "F9"; Footprint = "35552"; UniqueID = "\FXHNVXWO"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Datasheet Link"; Value = "https://componentsearchengine.com//3555-2.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Height"; Value = "11.6mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Name"; Value = "Keystone Electronics"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Part_Number"; Value = "3555-2"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser2 Part Number"; Value = "534-3555-2"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser2 Price/Stock"; Value = "https://www.mouser.com/Search/Refine.aspx?Keyword=534-3555-2"; VariantName = "[No Variations]"
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component J7 76825-0006
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component J9 76825-0006
+Added Member To Class: ClassName=TM4C123GH6PMI Member=Component J10 76825-0006
