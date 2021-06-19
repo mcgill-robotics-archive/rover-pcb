@@ -1,0 +1,3 @@
+Added Pin To Net: NetName=NO2 Pin=U2-59
+Added Member To Class: ClassName=arm_v4 Member=Component P8 BDC_C
+Added Member To Class: ClassName=arm_v4 Member=Component P9 76825-0006

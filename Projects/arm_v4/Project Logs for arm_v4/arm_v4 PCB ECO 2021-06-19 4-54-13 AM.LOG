@@ -1,0 +1,4 @@
+Change Component Footprint: Designator=P6 Old Footprint=1726470103 New Footprint=CON_1053091203
+Change Component Footprint: Designator=P7 Old Footprint=1726470103 New Footprint=CON_1053091203
+Change Component Footprint: Designator=P8 Old Footprint=1726470103 New Footprint=CON_1053091203
+Added Member To Class: ClassName=arm_v4 Member=Component P8 BDC_C

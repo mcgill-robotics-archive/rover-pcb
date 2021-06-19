@@ -1,0 +1,57 @@
+Removed Pin From Net: NetName=NO2 Pin=U2-59
+Change Component Designator: OldDesignator=P8 NewDesignator=P9
+Change Component Designator: OldDesignator=P9 NewDesignator=P10
+Added Component: Designator=P6(39301039)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://www.molex.com/webdocs/datasheets/pdf/en-us/0039301039_PCB_HEADERS.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "12mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Molex"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "39-30-1039"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser2 Part Number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser2 Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=P7(39301039)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://www.molex.com/webdocs/datasheets/pdf/en-us/0039301039_PCB_HEADERS.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "12mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Molex"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "39-30-1039"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser2 Part Number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser2 Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=P8(39301039)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://www.molex.com/webdocs/datasheets/pdf/en-us/0039301039_PCB_HEADERS.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "12mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Molex"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "39-30-1039"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser2 Part Number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser2 Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=P2-1
+Added Pin To Net: NetName=+24V Pin=P2-2
+Added Pin To Net: NetName=GND Pin=P3-1
+Added Pin To Net: NetName=+24V Pin=P3-2
+Added Pin To Net: NetName=GND Pin=P4-1
+Added Pin To Net: NetName=+24V Pin=P4-2
+Added Pin To Net: NetName=GND Pin=P6-1
+Added Pin To Net: NetName=GND Pin=P7-1
+Added Pin To Net: NetName=GND Pin=P8-1
+Added Pin To Net: NetName=DIR_A Pin=P6-3
+Added Pin To Net: NetName=DIR_A Pin=U2-29
+Added Net: Name=DIR_A
+Added Pin To Net: NetName=DIR_B Pin=P7-3
+Added Pin To Net: NetName=DIR_B Pin=U2-30
+Added Net: Name=DIR_B
+Added Pin To Net: NetName=DIR_C Pin=P8-3
+Added Pin To Net: NetName=DIR_C Pin=U2-31
+Added Net: Name=DIR_C
+Added Pin To Net: NetName=PWM_A Pin=P6-2
+Added Pin To Net: NetName=PWM_A Pin=U2-23
+Added Net: Name=PWM_A
+Added Pin To Net: NetName=PWM_B Pin=P7-2
+Added Pin To Net: NetName=PWM_B Pin=U2-24
+Added Net: Name=PWM_B
+Added Pin To Net: NetName=PWM_C Pin=P8-2
+Added Pin To Net: NetName=PWM_C Pin=U2-28
+Added Net: Name=PWM_C
+Added Member To Class: ClassName=arm_v4 Member=Component P6 BDC_A
+Added Member To Class: ClassName=arm_v4 Member=Component P7 BDC_B
+Added Member To Class: ClassName=arm_v4 Member=Component P10 Limit Switch
